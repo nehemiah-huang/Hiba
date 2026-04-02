@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Work — Hiba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Projects/Hiba/styles/projects.css">
+  <link rel="stylesheet" href="/Projects/Hiba/styles/style.css">
+  <link rel="stylesheet" href="/Projects/Hiba/styles/projects-detail.css">
+</head>
+<body>
+
+
+      <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img class="nav-logo-image" src="/Projects/Hiba/Images/hiba-white.png" alt="Hiba F. Logo" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span>Hiba</span>');">
+                <!-- <h2>Hiba F. (change the font)</h2> -->
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about-me.html" class="nav-link">About me</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="#projects" class="nav-link">Solutions</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Hiba.html" class="nav-cta">Get Started →</a>
+            </div>
+            <div class="nav-hamburger" id="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+  <div class="page">
+    <div class="page-header">
+      <h1>Projects I've worked on</h1>
+      <p>Operational partnerships, systems built, and businesses supported.</p>
+    </div>
+
+    <!-- Mobile filter toggle -->
+    <button class="mobile-filter-toggle" id="filterToggle" onclick="toggleFilters()">
+      <span>Filter Projects</span>
+      <span class="toggle-icon">+</span>
+    </button>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-inner" id="sidebarInner">
+          <div class="sidebar-inner-pad">
+
+            <div class="filter-group">
+              <span class="filter-group-label">Industry</span>
+              <div class="filter-opt"><input type="checkbox" id="i1" data-type="industry" data-val="Product-based"><label for="i1">Product-based</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i2" data-type="industry" data-val="Tech Startups"><label for="i2">Tech Startups</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i3" data-type="industry" data-val="Art & Culture"><label for="i3">Art &amp; Culture</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i4" data-type="industry" data-val="Creative"><label for="i4">Creative</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i5" data-type="industry" data-val="Experience Design"><label for="i5">Experience Design</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i6" data-type="industry" data-val="E-Commerce"><label for="i6">E-Commerce</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i7" data-type="industry" data-val="Event Production"><label for="i7">Event Production</label></div>
+              <div class="filter-opt"><input type="checkbox" id="i8" data-type="industry" data-val="Lifestyle Brands"><label for="i8">Lifestyle Brands</label></div>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <div class="filter-group">
+              <span class="filter-group-label">Type of Support</span>
+              <div class="filter-opt"><input type="checkbox" id="s1" data-type="support" data-val="Operations & Systems"><label for="s1">Operations &amp; Systems</label></div>
+              <div class="filter-opt"><input type="checkbox" id="s2" data-type="support" data-val="Project Coordination"><label for="s2">Project Coordination</label></div>
+              <div class="filter-opt"><input type="checkbox" id="s3" data-type="support" data-val="Strategic Oversight"><label for="s3">Strategic Oversight</label></div>
+              <div class="filter-opt"><input type="checkbox" id="s4" data-type="support" data-val="Workflow Design"><label for="s4">Workflow Design</label></div>
+              <div class="filter-opt"><input type="checkbox" id="s5" data-type="support" data-val="Launch Support"><label for="s5">Launch Support</label></div>
+              <div class="filter-opt"><input type="checkbox" id="s6" data-type="support" data-val="Accounts & Reporting"><label for="s6">Accounts &amp; Reporting</label></div>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <div class="filter-group">
+              <span class="filter-group-label">Client Type</span>
+              <div class="filter-opt"><input type="checkbox" id="c1" data-type="client" data-val="Enterprise"><label for="c1">Enterprise</label></div>
+              <div class="filter-opt"><input type="checkbox" id="c2" data-type="client" data-val="Small Team"><label for="c2">Small Team</label></div>
+              <div class="filter-opt"><input type="checkbox" id="c3" data-type="client" data-val="Studio"><label for="c3">Studio</label></div>
+            </div>
+
+            <button class="clear-btn" onclick="clearAll()">Clear all filters</button>
+
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="content-meta">
+          <div class="active-filters" id="active-filters"></div>
+          <span class="result-count" id="result-count">4 Projects</span>
+        </div>
+
+        <div class="project-list" id="project-list">
+
+          <!-- Project 1: IWMIS / Nerasol -->
+          <div class="project-row"
+            data-industry="Product-based,Tech Startups"
+            data-support="Operations & Systems,Project Coordination,Accounts & Reporting"
+            data-client="Enterprise">
+            <div class="project-left">
+              <div class="project-eyebrow">Nerasol Ghana Limited — Enterprise</div>
+              <div class="project-title">Driving Adoption and Reliability at Scale</div>
+              <div class="project-desc">Turning IWMIS from a technical system into a practical solution that improved data accuracy, financial settlements, and user adoption across all 16 regions of Ghana.</div>
+              <div class="project-tags">
+                <span class="tag">Operations &amp; Systems</span>
+                <span class="tag">Project Coordination</span>
+                <span class="tag">Accounts &amp; Reporting</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <span class="project-year">2023</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+
+          <!-- Project 2: AYA Editions -->
+          <div class="project-row"
+            data-industry="Art & Culture,Creative,E-Commerce"
+            data-support="Operations & Systems,Project Coordination,Accounts & Reporting,Workflow Design,Launch Support,Strategic Oversight"
+            data-client="Small Team">
+            <div class="project-left">
+              <div class="project-eyebrow">AYA Editions — Small Team</div>
+              <div class="project-title">Strengthening the Digital and Commercial Foundations of a Cultural Publishing Platform</div>
+              <div class="project-desc">Transforming a niche creative publisher into a digitally streamlined, culturally visible, and partnership-driven brand — from Shopify infrastructure to exhibition coordination.</div>
+              <div class="project-tags">
+                <span class="tag">Operations &amp; Systems</span>
+                <span class="tag">Launch Support</span>
+                <span class="tag">Strategic Oversight</span>
+                <span class="tag">Accounts &amp; Reporting</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <span class="project-year">2023</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Experiential Events -->
+          <div class="project-row"
+            data-industry="Creative,Experience Design,Event Production"
+            data-support="Operations & Systems,Project Coordination,Accounts & Reporting,Workflow Design"
+            data-client="Studio">
+            <div class="project-left">
+              <div class="project-eyebrow">Event Production Studio — Studio</div>
+              <div class="project-title">Coordinating the Systems Behind Experiential Projects</div>
+              <div class="project-desc">Supporting brand activations and private events — including The Magna Carta with Veuve Clicquot — through structured production planning, vendor coordination, and budget oversight.</div>
+              <div class="project-tags">
+                <span class="tag">Operations &amp; Systems</span>
+                <span class="tag">Project Coordination</span>
+                <span class="tag">Workflow Design</span>
+                <span class="tag">Accounts &amp; Reporting</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <span class="project-year">2024</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+
+          <!-- Project 4: ALOD -->
+          <div class="project-row"
+            data-industry="Creative,Experience Design,Lifestyle Brands"
+            data-support="Operations & Systems,Project Coordination,Accounts & Reporting,Workflow Design,Strategic Oversight"
+            data-client="Studio">
+            <div class="project-left">
+              <div class="project-eyebrow">A Life of Design — Studio</div>
+              <div class="project-title">Accelerating Growth for a Founder-Led Experiential Design Studio</div>
+              <div class="project-desc">Introducing financial visibility, structured workflows, and coordinated project execution to free the founder for creative leadership across an expanding portfolio.</div>
+              <div class="project-tags">
+                <span class="tag">Operations &amp; Systems</span>
+                <span class="tag">Strategic Oversight</span>
+                <span class="tag">Workflow Design</span>
+                <span class="tag">Accounts &amp; Reporting</span>
+              </div>
+            </div>
+            <div class="project-right">
+              <span class="project-year">2024</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="empty-state" id="empty-state">No projects match these filters.</div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/Projects/Hiba/javascript/projects.js"></script>
+  <script src="/Projects/Hiba/javascript/projects-detail.js"></script>
+  <script src="/Projects/Hiba/javascript/script.js"></script>
+</body>
+</html>

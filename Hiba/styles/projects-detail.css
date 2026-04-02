@@ -1,0 +1,308 @@
+/* ===== DETAIL VIEW ===== */
+/* Append these styles to the bottom of projects.css */
+
+/* ── Back button ── */
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #9c9f88;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  transition: color 0.2s;
+}
+
+.detail-back:hover {
+  color: #bb9940;
+}
+
+.detail-back-arrow {
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.detail-back:hover .detail-back-arrow {
+  transform: translateX(-3px);
+}
+
+/* ── Detail header ── */
+.detail-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.07);
+}
+
+.detail-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #bb9940;
+  margin-bottom: 0.75rem;
+}
+
+.detail-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #E6E6E6;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  max-width: 680px;
+}
+
+.detail-intro {
+  font-size: 14px;
+  color: #9c9f88;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 580px;
+  margin-bottom: 1.75rem;
+}
+
+.detail-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.detail-meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-meta-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9c9f88;
+}
+
+.detail-year {
+  font-size: 13px;
+  color: #E6E6E6;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* ── Stats ── */
+.detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(230, 230, 230, 0.07);
+}
+
+.detail-stat {
+  flex: 1;
+  min-width: 160px;
+  padding: 1.5rem 1.75rem;
+  border-right: 1px solid rgba(230, 230, 230, 0.07);
+}
+
+.detail-stat:last-child {
+  border-right: none;
+}
+
+.detail-stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #bb9940;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.detail-stat-label {
+  font-size: 11px;
+  color: #9c9f88;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ── Sections ── */
+.detail-section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.07);
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+}
+
+.detail-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #bb9940;
+  margin-bottom: 1.25rem;
+}
+
+.detail-section-body p {
+  font-size: 13.5px;
+  color: #9c9f88;
+  line-height: 1.85;
+  font-weight: 300;
+  max-width: 620px;
+  margin-bottom: 1rem;
+}
+
+.detail-section-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Lists ── */
+.detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.detail-list li {
+  font-size: 13px;
+  color: #9c9f88;
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  position: relative;
+}
+
+.detail-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #bb9940;
+  font-size: 11px;
+  top: 0.4rem;
+}
+
+/* ── Solutions grid ── */
+.detail-solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.detail-solution {
+  background: rgba(230, 230, 230, 0.03);
+  border: 1px solid rgba(230, 230, 230, 0.07);
+  padding: 1.5rem;
+}
+
+.detail-solution-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #E6E6E6;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.detail-solution-body {
+  font-size: 12.5px;
+  color: #9c9f88;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* ── Highlights ── */
+.detail-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-highlight {
+  padding-left: 1.25rem;
+  border-left: 2px solid rgba(187, 153, 64, 0.3);
+}
+
+.detail-highlight-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #E6E6E6;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.detail-highlight-body {
+  font-size: 13px;
+  color: #9c9f88;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 560px;
+  margin-bottom: 0;
+}
+
+/* ── Impact ── */
+.detail-impact-body p {
+  font-size: 14px;
+  color: #c8c8c8;
+  font-style: italic;
+  line-height: 1.9;
+  max-width: 600px;
+}
+
+/* ── Entry animation ── */
+.detail-view {
+  animation: detailFadeIn 0.3s ease forwards;
+}
+
+@keyframes detailFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .detail-stats {
+    flex-direction: column;
+  }
+
+  .detail-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.07);
+    min-width: unset;
+  }
+
+  .detail-stat:last-child {
+    border-bottom: none;
+  }
+
+  .detail-solutions {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-meta-row {
+    gap: 1.25rem;
+  }
+
+  .detail-title {
+    font-size: 1.4rem;
+  }
+}
