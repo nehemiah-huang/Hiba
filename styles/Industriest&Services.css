@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* === Section Base Styling === */
+.is-hero {
+  margin-top: 6rem;           /* push below navbar */
+  padding: 4rem 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  position: relative;
+}
+
+/* Optional subtle underline effect */
+.is-hero::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: whitesmoke;
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .is-hero {
+    font-size: 2.2rem;
+    padding: 3rem 1.5rem;
+    margin-top: 5rem;
+  }
+}
+
+
+.is-section, .section-title {
+  padding: 2rem 5%;                /* breathing space around section */
+  max-width: 100%;               /* keep content from stretching too wide */
+  margin: 0 auto 4rem auto;        /* center with spacing at bottom */
+}
+
+/* === Section Title === */
+.is-section-title {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: left;                /* align left for desktop */
+  display: inline-block;           /* so underline fits text only */
+  border-bottom: 3px solid whitesmoke;
+  padding-bottom: 0.5rem;
+}
+
+/* === Section List === */
+.is-section-list {
+  list-style: none;                /* remove bullets */
+  margin: 0;
+  padding: 0 0 0 1.5rem;           /* indent slightly */
+  max-width: 800px;                /* comfortable line length */
+}
+
+.is-section-list li {
+  color: var(--text-muted, #ccc);
+  padding: 0.8rem 1.2rem 0.8rem 0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.is-section-list li:hover {
+  color: whitesmoke;
+  transform: translateX(5px);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1023px) {
+  .is-section-title {
+    text-align: center;
+    display: block;
+    border-bottom-width: 2px;      /* thinner underline on small screens */
+  }
+
+  .is-section-list {
+    padding-left: 0;               /* no indent on small screens */
+    max-width: 100%;
+  }
+}
+
+/* ===== Hero Image Below Areas of Expertise ===== */
+.is-hero-image {
+  width: 100%;
+  max-height: 600px;              /* limit for large screens */
+  object-fit: cover;              /* scale and crop nicely */
+  margin: 0;                 /* spacing from text */
+  border-radius: 8px;             /* subtle rounding */
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .is-hero-image {
+    max-height: 400px;            /* smaller height for tablets/mobiles */
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .is-hero-image {
+    max-height: 300px;
+    margin: 1rem 0;
+  }
+}
+
