@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox of Wins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inbox-of-wins.css">
+</head>
+<body>
+
+<section class="iow">
+    <div class="iow-hdr">
+        <h1>A quick look inside my inbox of wins</h1>
+        <p>What I tend to hear once I've helped bring structure, clarity, and calm to the work.</p>
+    </div>
+
+    <div class="inbox">
+        <div class="inbox-bar">
+            <span class="inbox-label">Inbox of wins</span>
+            <div class="search">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <circle cx="6.5" cy="6.5" r="5" stroke="#B3B3B3" stroke-width="1.5"/>
+                    <path d="M10.5 10.5L14 14" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <input type="text" placeholder="Search feedback..." oninput="filterRows(this.value)">
+            </div>
+        </div>
+
+        <div class="inbox-body">
+
+            <div id="rows">
+                <div class="irow" data-id="kwabena" data-s="kwabena systems overhaul launch ran smoother">
+                    <div class="av"><img src="images/kwabena.jpg" alt="Kwabena" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">KA</span></div>
+                    <div class="meta">
+                        <span class="rname">Kwabena</span>
+                        <span class="rtag">Systems overhaul</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot hidden"></div>
+                        <span class="mtext">Thanks again, the whole launch ran so much smoother.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">1 day ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+
+                <div class="irow" data-id="ama" data-s="ama project handoff clarity everything">
+                    <div class="av"><img src="images/ama.jpg" alt="Ama" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">AM</span></div>
+                    <div class="meta">
+                        <span class="rname">Ama</span>
+                        <span class="rtag">Project handoff</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot hidden"></div>
+                        <span class="mtext">You brought such clarity to everything.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">4 days ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+
+                <div class="irow" data-id="kwesi" data-s="kwesi workflow audit saved time">
+                    <div class="av"><img src="images/kwesi.jpg" alt="Kwesi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">KW</span></div>
+                    <div class="meta">
+                        <span class="rname">Kwesi</span>
+                        <span class="rtag">Workflow audit</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot"></div>
+                        <span class="mtext">You saved me so much time.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">1 week ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+
+                <div class="irow" data-id="nana" data-s="nana launch support system proper feeling">
+                    <div class="av"><img src="/Images/ceo3.jpeg" alt="Nana" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">NA</span></div>
+                    <div class="meta">
+                        <span class="rname">Nana</span>
+                        <span class="rtag">Launch support</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot"></div>
+                        <span class="mtext">I'm finally feeling like I have a proper system.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">2 weeks ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+
+                <div class="irow" data-id="michael" data-s="michael ops delegation weight lifted">
+                    <div class="av"><img src="/Images/ceo2.jpeg" alt="Michael" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">MI</span></div>
+                    <div class="meta">
+                        <span class="rname">Michael</span>
+                        <span class="rtag">Ops delegation</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot hidden"></div>
+                        <span class="mtext">Feels like a weight has been lifted.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">1 month ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+
+                <div class="irow" data-id="daniel" data-s="daniel tool integration system works for me">
+                    <div class="av"><img src="/Images/ceo1.jpeg" alt="Daniel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="av-fallback">DA</span></div>
+                    <div class="meta">
+                        <span class="rname">Daniel</span>
+                        <span class="rtag">Tool integration</span>
+                    </div>
+                    <div class="rmsg">
+                        <div class="dot"></div>
+                        <span class="mtext">I finally feel like I have a system that works for me.</span>
+                    </div>
+                    <div class="rright">
+                        <span class="rtime">1 month ago</span>
+                        <span class="rarrow">›</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading pane (desktop: right side / mobile: bottom sheet) -->
+            <div class="rpane" id="rpane" aria-hidden="true">
+                <div class="rpane-inner" id="rpane-inner">
+                    <button class="rpane-close" onclick="closePane()" aria-label="Close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="rpane-content" id="rpane-content"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Mobile overlay -->
+<div class="mob-overlay" id="mob-overlay" onclick="closePane()"></div>
+
+<script>
+    const testimonials = {
+        kwabena: {
+            initials: 'KA',
+            name: 'Kwabena',
+            tag: 'Systems overhaul',
+            date: 'April 15, 2026',
+            img: 'images/kwabena.jpg',
+            message: `Thanks again — the whole launch ran so much smoother than our previous ones. Before we worked together I was the one holding every single piece together and just hoping nothing fell through. You came in, looked at how we were actually operating, and rebuilt it in a way that made sense for our team. The launch checklist alone saved us hours of back-and-forth. I don't think I realised how much energy I was wasting until it was gone.`
+        },
+        ama: {
+            initials: 'AM',
+            name: 'Ama',
+            tag: 'Project handoff',
+            date: 'April 12, 2026',
+            img: 'images/ama.jpg',
+            message: `You brought such clarity to everything. Honestly, the handoff process had always been a bit of a mess for us — things would get lost, context would disappear, and the next person would have to start from scratch. What you put together meant anyone could pick up where we left off and actually understand what was happening. My team noticed immediately. It felt like we finally had a professional operation.`
+        },
+        kwesi: {
+            initials: 'KW',
+            name: 'Kwesi',
+            tag: 'Workflow audit',
+            date: 'April 8, 2026',
+            img: 'images/kwesi.jpg',
+            message: `You saved me so much time. I came into the audit call a bit defensive honestly — I thought I had things mostly figured out. But you spotted three things in the first twenty minutes that I'd completely normalised. Once we fixed those, the whole week started moving differently. I'm getting the same output in noticeably fewer hours and I'm not drained at the end of the day. That's not a small thing.`
+        },
+        nana: {
+            initials: 'NA',
+            name: 'Nana',
+            tag: 'Launch support',
+            date: 'April 1, 2026',
+            img: 'images/nana.jpg',
+            message: `I'm finally feeling like I have a proper system. I've tried to build one myself a few times but it always fell apart because I built it for a version of my business that didn't quite exist yet. What we built together actually fits — it's flexible where it needs to be and firm where it needs to be. The launch went well but honestly the bigger win is that I now have something I'll use long after.`
+        },
+        michael: {
+            initials: 'MI',
+            name: 'Michael',
+            tag: 'Ops delegation',
+            date: 'March 20, 2026',
+            img: 'images/michael.jpg',
+            message: `Feels like a weight has been lifted. I'd been carrying too many things for too long and telling myself it was just what running a business looked like. The delegation framework you mapped out wasn't complicated but I needed someone to actually show me how to use it with my specific team. My Monday mornings look completely different now. I can think again.`
+        },
+        daniel: {
+            initials: 'DA',
+            name: 'Daniel',
+            tag: 'Tool integration',
+            date: 'March 14, 2026',
+            img: 'images/daniel.jpg',
+            message: `I finally feel like I have a system that works for me, not the other way around. I'd accumulated so many tools over the years that were supposed to make things easier but really just added noise. You cut through it, figured out what I was actually trying to do, and set up something clean. I use it every day now without thinking about it — which is exactly the point, right?`
+        }
+    };
+
+    let activeId = null;
+
+    function openPane(id) {
+        const data = testimonials[id];
+        if (!data) return;
+
+        activeId = id;
+
+        document.querySelectorAll('.irow').forEach(r => r.classList.remove('selected'));
+        document.querySelector(`[data-id="${id}"]`).classList.add('selected');
+
+        const content = document.getElementById('rpane-content');
+        content.innerHTML = `
+            <div class="rp-avatar">
+                <img src="${data.img}" alt="${data.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <span class="rp-av-fallback">${data.initials}</span>
+            </div>
+            <div class="rp-name">${data.name}</div>
+            <div class="rp-meta">
+                <span class="rp-tag">${data.tag}</span>
+                <span class="rp-dot-sep">·</span>
+                <span class="rp-date">${data.date}</span>
+            </div>
+            <div class="rp-divider"></div>
+            <p class="rp-message">${data.message}</p>
+        `;
+
+        const pane = document.getElementById('rpane');
+        const inbox = document.querySelector('.inbox-body');
+        pane.classList.add('open');
+        inbox.classList.add('pane-open');
+
+        const isMobile = window.innerWidth <= 680;
+        if (isMobile) {
+            document.getElementById('mob-overlay').classList.add('visible');
+        }
+    }
+
+    function closePane() {
+        activeId = null;
+        document.querySelectorAll('.irow').forEach(r => r.classList.remove('selected'));
+
+        const pane = document.getElementById('rpane');
+        const inbox = document.querySelector('.inbox-body');
+        pane.classList.remove('open');
+        inbox.classList.remove('pane-open');
+        document.getElementById('mob-overlay').classList.remove('visible');
+    }
+
+    document.querySelectorAll('.irow').forEach(row => {
+        row.addEventListener('click', () => {
+            const id = row.dataset.id;
+            if (activeId === id) {
+                closePane();
+            } else {
+                openPane(id);
+            }
+        });
+    });
+
+    function filterRows(v) {
+        const q = v.toLowerCase();
+        document.querySelectorAll('#rows .irow').forEach(r => {
+            r.style.display = r.dataset.s.includes(q) ? '' : 'none';
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 680) {
+            document.getElementById('mob-overlay').classList.remove('visible');
+        }
+    });
+</script>
+
+</body>
+</html>

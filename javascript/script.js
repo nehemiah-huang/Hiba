@@ -139,25 +139,28 @@ function initParallaxEffects() {
     const processSteps = document.querySelectorAll('.process-step');
     
     // Initial offsets for parallax section
-    const parallaxOffsets = [0, 300, 600];
+    const parallaxOffsets = [0, 150, 300];
     
     // Initial offsets for process section
-    const processOffsets = [0, 250, 500, 750];
+    const processOffsets = [0, 150, 300, 450];
     
     function updateParallax() {
         // Update parallax section
         if (parallaxSection && parallaxColumns.length > 0) {
             const sectionRect = parallaxSection.getBoundingClientRect();
-            const sectionTop = sectionRect.top;
-            const sectionHeight = sectionRect.height;
             const windowHeight = window.innerHeight;
-            
-            const scrollProgress = Math.max(0, Math.min(1, 
-                (windowHeight - sectionTop) / (windowHeight + sectionHeight * 0.5)
+
+            // Start animating when section top hits bottom of viewport
+            const start = windowHeight;           
+            const end = windowHeight * 0.2;      
+            const current = sectionRect.top;
+
+            const scrollProgress = Math.max(0, Math.min(1,
+                (start - current) / (start - end)
             ));
-            
+
             parallaxColumns.forEach((column, index) => {
-                const initialOffset = parallaxOffsets[index];
+                const initialOffset = parallaxOffsets[index]; // [0, 150, 300]
                 const newOffset = initialOffset * (1 - scrollProgress);
                 column.style.transform = `translateY(${newOffset}px)`;
             });
@@ -166,14 +169,16 @@ function initParallaxEffects() {
         // Update process section
         if (processSection && processSteps.length > 0) {
             const sectionRect = processSection.getBoundingClientRect();
-            const sectionTop = sectionRect.top;
-            const sectionHeight = sectionRect.height;
             const windowHeight = window.innerHeight;
-            
-            const scrollProgress = Math.max(0, Math.min(1, 
-                (windowHeight - sectionTop) / (windowHeight + sectionHeight * 0.5)
+
+            const start = windowHeight * 0.5;   
+            const end = -windowHeight * 0.5;   
+            const current = sectionRect.top;
+
+            const scrollProgress = Math.max(0, Math.min(1,
+                (start - current) / (start - end)
             ));
-            
+
             processSteps.forEach((step, index) => {
                 const initialOffset = processOffsets[index];
                 const newOffset = initialOffset * (1 - scrollProgress);
@@ -501,3 +506,134 @@ document.addEventListener('DOMContentLoaded', () => {
     initFooter();
     console.log('✅ Portfolio website initialized successfully!');
 });
+
+const testimonials = {
+        kwabena: {
+            initials: 'KA',
+            name: 'Kwabena',
+            tag: 'Systems overhaul',
+            date: 'April 15, 2026',
+            img: 'images/kwabena.jpg',
+            message: `Thanks again — the whole launch ran so much smoother than our previous ones. Before we worked together I was the one holding every single piece together and just hoping nothing fell through. You came in, looked at how we were actually operating, and rebuilt it in a way that made sense for our team. The launch checklist alone saved us hours of back-and-forth. I don't think I realised how much energy I was wasting until it was gone.`
+        },
+        ama: {
+            initials: 'AM',
+            name: 'Ama',
+            tag: 'Project handoff',
+            date: 'April 12, 2026',
+            img: 'images/ama.jpg',
+            message: `You brought such clarity to everything. Honestly, the handoff process had always been a bit of a mess for us — things would get lost, context would disappear, and the next person would have to start from scratch. What you put together meant anyone could pick up where we left off and actually understand what was happening. My team noticed immediately. It felt like we finally had a professional operation.`
+        },
+        kwesi: {
+            initials: 'KW',
+            name: 'Kwesi',
+            tag: 'Workflow audit',
+            date: 'April 8, 2026',
+            img: 'images/kwesi.jpg',
+            message: `You saved me so much time. I came into the audit call a bit defensive honestly — I thought I had things mostly figured out. But you spotted three things in the first twenty minutes that I'd completely normalised. Once we fixed those, the whole week started moving differently. I'm getting the same output in noticeably fewer hours and I'm not drained at the end of the day. That's not a small thing.`
+        },
+        nana: {
+            initials: 'NA',
+            name: 'Nana',
+            tag: 'Launch support',
+            date: 'April 1, 2026',
+            img: 'images/nana.jpg',
+            message: `I'm finally feeling like I have a proper system. I've tried to build one myself a few times but it always fell apart because I built it for a version of my business that didn't quite exist yet. What we built together actually fits — it's flexible where it needs to be and firm where it needs to be. The launch went well but honestly the bigger win is that I now have something I'll use long after.`
+        },
+        michael: {
+            initials: 'MI',
+            name: 'Michael',
+            tag: 'Ops delegation',
+            date: 'March 20, 2026',
+            img: 'images/michael.jpg',
+            message: `Feels like a weight has been lifted. I'd been carrying too many things for too long and telling myself it was just what running a business looked like. The delegation framework you mapped out wasn't complicated but I needed someone to actually show me how to use it with my specific team. My Monday mornings look completely different now. I can think again.`
+        },
+        daniel: {
+            initials: 'DA',
+            name: 'Daniel',
+            tag: 'Tool integration',
+            date: 'March 14, 2026',
+            img: 'images/daniel.jpg',
+            message: `I finally feel like I have a system that works for me, not the other way around. I'd accumulated so many tools over the years that were supposed to make things easier but really just added noise. You cut through it, figured out what I was actually trying to do, and set up something clean. I use it every day now without thinking about it — which is exactly the point, right?`
+        }
+    };
+
+    let activeId = null;
+
+    function openPane(id) {
+        const data = testimonials[id];
+        if (!data) return;
+
+        activeId = id;
+
+        document.querySelectorAll('.irow').forEach(r => r.classList.remove('selected'));
+        document.querySelector(`[data-id="${id}"]`).classList.add('selected');
+
+        const content = document.getElementById('rpane-content');
+        content.innerHTML = `
+            <div class="rp-avatar">
+                <img src="${data.img}" alt="${data.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <span class="rp-av-fallback">${data.initials}</span>
+            </div>
+            <div class="rp-name">${data.name}</div>
+            <div class="rp-meta">
+                <span class="rp-tag">${data.tag}</span>
+                <span class="rp-dot-sep">·</span>
+                <span class="rp-date">${data.date}</span>
+            </div>
+            <div class="rp-divider"></div>
+            <p class="rp-message">${data.message}</p>
+        `;
+
+        const pane = document.getElementById('rpane');
+        const inbox = document.querySelector('.inbox-body');
+        pane.classList.add('open');
+        inbox.classList.add('pane-open');
+
+        const isMobile = window.innerWidth <= 680;
+        if (isMobile) {
+            document.getElementById('mob-overlay').classList.add('visible');
+        }
+    }
+
+    function closePane() {
+        activeId = null;
+        document.querySelectorAll('.irow').forEach(r => r.classList.remove('selected'));
+
+        const pane = document.getElementById('rpane');
+        const inbox = document.querySelector('.inbox-body');
+        pane.classList.remove('open');
+        inbox.classList.remove('pane-open');
+        document.getElementById('mob-overlay').classList.remove('visible');
+
+        // ← Add this: reset rows scroll position after pane closes
+        const rows = document.getElementById('rows');
+        setTimeout(() => {
+            rows.style.maxHeight = '';   // clear any inline override
+            rows.scrollTop = 0;          // reset scroll to top
+        }, 320); 
+    }
+
+    document.querySelectorAll('.irow').forEach(row => {
+        row.addEventListener('click', () => {
+            const id = row.dataset.id;
+            if (activeId === id) {
+                closePane();
+            } else {
+                openPane(id);
+            }
+        });
+    });
+
+    function filterRows(v) {
+        const q = v.toLowerCase();
+        document.querySelectorAll('#rows .irow').forEach(r => {
+            r.style.display = r.dataset.s.includes(q) ? '' : 'none';
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 680) {
+            document.getElementById('mob-overlay').classList.remove('visible');
+        }
+    });
