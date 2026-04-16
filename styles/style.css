@@ -219,6 +219,7 @@ p {
     margin: 0 auto 3rem auto;
     opacity: 0;
     animation: fadeInUp 1s ease 0.9s forwards;
+    padding: 0 2rem 0 2rem;
 }
 
 .hero-subtitle.section-subtitle {
