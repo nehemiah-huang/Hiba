@@ -381,8 +381,8 @@ p {
 /* ===== PROCESS SECTION ===== */
 .process-section {
     padding: 8rem 3rem;
-    background: var(--bg-forest);
-    color: var(--text-primary);
+    background: #eee2bc;
+    color: #1a1a1a;
     text-align: center;
     min-height: 100vh;
     position: relative;
@@ -397,6 +397,7 @@ p {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    color: #1a1a1a;
 }
 
 .process-subtitle {
@@ -404,7 +405,7 @@ p {
     margin: 0 auto 6rem;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--text-secondary);
+    color: #4a4535;
 }
 
 .process-steps {
@@ -432,7 +433,7 @@ p {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--gold);
+    color: #8a6f2e;
     margin-bottom: 1.2rem;
     font-family: 'Playfair Display', serif;
 }
@@ -442,12 +443,13 @@ p {
     font-weight: 600;
     margin-bottom: 1rem;
     line-height: 1.3;
+    color: #1a1a1a;
 }
 
 .process-step p {
     font-size: 1rem;
     line-height: 1.8;
-    color: var(--text-secondary);
+    color: #4a4535;
 }
 
 .process-cta {
