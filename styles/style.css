@@ -535,7 +535,7 @@ p {
 .iow-hdr p {
     color: #B3B3B3;
     font-size: clamp(0.9rem, 1.5vw, 1.05rem);
-    max-width: 560px;
+    max-width: 900px;
     margin: 0 auto;
     line-height: 1.7;
 }
