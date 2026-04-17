@@ -142,7 +142,7 @@ function initParallaxEffects() {
     const parallaxOffsets = [0, 150, 300];
     
     // Initial offsets for process section
-    const processOffsets = [0, 150, 300, 450];
+    const processOffsets = [0, 100, 150, 300];
     
     function updateParallax() {
         // Update parallax section
@@ -172,7 +172,7 @@ function initParallaxEffects() {
             const windowHeight = window.innerHeight;
 
             const start = windowHeight * 0.5;   
-            const end = -windowHeight * 0.5;   
+            const end = -windowHeight * 0.255;   
             const current = sectionRect.top;
 
             const scrollProgress = Math.max(0, Math.min(1,

@@ -424,9 +424,9 @@ p {
 }
 
 .process-step:nth-child(1) { transform: translateY(0px); }
-.process-step:nth-child(2) { transform: translateY(150px); }
-.process-step:nth-child(3) { transform: translateY(300px); }
-.process-step:nth-child(4) { transform: translateY(450px); }
+.process-step:nth-child(2) { transform: translateY(100px); }
+.process-step:nth-child(3) { transform: translateY(150px); }
+.process-step:nth-child(4) { transform: translateY(300px); }
 
 .step-number {
     display: block;
