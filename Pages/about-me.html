@@ -337,16 +337,30 @@
         .support-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            border-top: 1px solid rgba(230,230,230,0.15);
+            /* border-top: 1px solid rgba(230,230,230,0.15); */
+            /* border-left: 1px solid rgba(230,230,230,0.15); */
         }
 
         .support-item {
-            padding: 3.5rem 3rem 3.5rem 0;
+            padding: 3.5rem 3rem;
             border-right: 1px solid rgba(230,230,230,0.15);
-            position: relative;
+            /* border-bottom: 1px solid rgba(230,230,230,0.15); */
             transition: background 0.3s ease;
         }
+        .support-bottom {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* center the 2-column row under the 3 above */
+            max-width: 66.666%;
+            margin: 0 auto;
+            width: 100%;
+            /* border-right: 1px solid rgba(230,230,230,0.15); */
+        }
 
+        /* .support-bottom .support-item:first-child {
+            border-left: 1px solid rgba(230,230,230,0.15);
+        } */
         .support-item:last-child { border-right: none; }
         .support-item:nth-child(n+2) { padding-left: 3rem; }
 
@@ -814,6 +828,21 @@
                     <h3>Founder's Right Hand</h3>
                     <p>The work becomes more integrated. I work directly alongside you to help carry the operational weight of the business so you can focus more fully on vision, relationships, and growth — managing priorities, following through on decisions, and handling the moving parts that would otherwise sit with you.</p>
                 </div>
+
+                <div class="support-bottom">
+                    <div class="support-item reveal">
+                        <span class="item-number">04</span>
+                        <h3>SPECIAL INITIATIVES LEAD</h3>
+                        <p>At times, I also take on responsibility for leading specific initiatives, particularly when a project or focus area requires careful coordination across collaborators, timelines, and moving parts</p>
+                    </div>
+
+                    <div class="support-item reveal">
+                        <span class="item-number">05</span>
+                        <h3>STRATEGIC PARTNER</h3>
+                        <p>The collaboration becomes more shared. I work alongside you or your team to help shape and build an initiative from an early stage, contributing to direction, structure, and execution as the idea develops.</p>
+                    </div>
+                </div>
+
 
             </div>
         </div>
