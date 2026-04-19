@@ -392,7 +392,7 @@ p {
 }
 
 .process-title {
-    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
