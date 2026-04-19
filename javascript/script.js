@@ -511,7 +511,7 @@ const testimonials = {
         kwabena: {
             initials: 'PG',
             name: 'Patrick Gentilezza',
-            tag: 'Operations Responsibility Matrix',
+            tag: 'Founder & Director - buro',
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
@@ -530,13 +530,21 @@ const testimonials = {
         },
         kwesi: {
             initials: 'PG',
-            name: 'Patrick Gentilezza',
-            tag: 'Founder & Director - buro',
+            name: 'Patrick Gentilezzaadad',
+            tag: 'Production Schedule',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
-            message: `I have to praise someone this month: 
-                    Hiba for taking those new responsibilities by the horns and leading the team so well.  
-                    Continue to boss those extra responsibilities. The growth is real!`
+            message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far 👏.`
+        },
+        Patrick: {
+            initials: 'PG',
+            name: 'Patrick Gentilezzaadad',
+            tag: 'Operations Management',
+            date: 'April 8, 2026',
+            img: 'images/kwesi.jpg',
+            message: `I have to praise someone this month: Hiba for 
+                    taking those new responsibilities by the horns and leading the team so well. 
+                    Continue to boss those extra responsibilities. The growth is real! `
         },
         nana: {
             initials: 'PG',
@@ -544,7 +552,7 @@ const testimonials = {
             tag: 'Founder & Director - buro',
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
-            message: ``
+            message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far. 👏`
         },
         michael: {
             initials: 'MI',
