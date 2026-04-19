@@ -391,7 +391,30 @@
             line-height: 1.8;
             color: rgba(230,230,230,0.7);
         }
+        @media (max-width: 768px) {
+            .support-section {
+                padding: 5rem 1.5rem;
+            }
 
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .support-bottom {
+                grid-template-columns: 1fr;  /* ← stack to single column */
+                max-width: 100%;
+            }
+
+            .support-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(230,230,230,0.1);
+                padding: 2.5rem 0;
+            }
+
+            .support-item:last-child {
+                border-bottom: none;
+            }
+        }
         /* ===== TOOLS SECTION ===== */
         .tools-section {
             background: var(--bg-dark);
