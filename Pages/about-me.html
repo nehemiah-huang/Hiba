@@ -225,7 +225,34 @@
             width: 3px; height: 60%;
             background: var(--gold);
         }
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 7rem 1.5rem 4rem;
+                min-height: unset;
+            }
 
+            .about-hero-inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-hero-image {
+                order: -1;
+            }
+
+            .about-hero-image::before {
+                display: none;
+            }
+
+            .photo-frame {
+                aspect-ratio: 4 / 5;
+                max-height: none;
+            }
+
+            .photo-frame img {
+                object-position: center 35%; /* ← pulls focus down toward her face */
+            }
+        }
         /* ===== STORY SECTION ===== */
         .story-section {
             background: var(--bg-medium);
