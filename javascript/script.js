@@ -511,7 +511,7 @@ const testimonials = {
         kwabena: {
             initials: 'PG',
             name: 'Patrick Gentilezza',
-            tag: 'Founder & Director - buro',
+            tag: 'Operations Responsibility Matrix',
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
