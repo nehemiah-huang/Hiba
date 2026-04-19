@@ -509,36 +509,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const testimonials = {
         kwabena: {
-            initials: 'KA',
-            name: 'Kwabena',
-            tag: 'Systems overhaul',
+            initials: 'PG',
+            name: 'Patrick Gentilezza',
+            tag: 'Founder & Director - buro',
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
-            message: `Thanks again — the whole launch ran so much smoother than our previous ones. Before we worked together I was the one holding every single piece together and just hoping nothing fell through. You came in, looked at how we were actually operating, and rebuilt it in a way that made sense for our team. The launch checklist alone saved us hours of back-and-forth. I don't think I realised how much energy I was wasting until it was gone.`
+            message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
         },
         ama: {
-            initials: 'AM',
-            name: 'Ama',
-            tag: 'Project handoff',
+            initials: 'AA',
+            name: 'Awurabena Asante',
+            tag: 'Customer - buro',
             date: 'April 12, 2026',
             img: 'images/ama.jpg',
-            message: `You brought such clarity to everything. Honestly, the handoff process had always been a bit of a mess for us — things would get lost, context would disappear, and the next person would have to start from scratch. What you put together meant anyone could pick up where we left off and actually understand what was happening. My team noticed immediately. It felt like we finally had a professional operation.`
+            message: `Good evening buro, just sending massive thanks for your support yesterday. 
+                    I appreciate the assistance on such short notice, especially how things were moved around just to accommodate me. 
+                    To Hiba, special thanks again. You really went above and beyond to diffuse a very tricky situation. I truly enjoyed interacting with you. 
+                    Nevertheless, thanks to the entire team, for the support especially with going over the time limit. I can’t express my gratitude enough. 
+                    God bless you all.`
         },
         kwesi: {
-            initials: 'KW',
-            name: 'Kwesi',
-            tag: 'Workflow audit',
+            initials: 'PG',
+            name: 'Patrick Gentilezza',
+            tag: 'Founder & Director - buro',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
-            message: `You saved me so much time. I came into the audit call a bit defensive honestly — I thought I had things mostly figured out. But you spotted three things in the first twenty minutes that I'd completely normalised. Once we fixed those, the whole week started moving differently. I'm getting the same output in noticeably fewer hours and I'm not drained at the end of the day. That's not a small thing.`
+            message: `I have to praise someone this month: 
+                    Hiba for taking those new responsibilities by the horns and leading the team so well.  
+                    Continue to boss those extra responsibilities. The growth is real!`
         },
         nana: {
-            initials: 'NA',
-            name: 'Nana',
-            tag: 'Launch support',
+            initials: 'PG',
+            name: 'Patrick Gentilezza',
+            tag: 'Founder & Director - buro',
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
-            message: `I'm finally feeling like I have a proper system. I've tried to build one myself a few times but it always fell apart because I built it for a version of my business that didn't quite exist yet. What we built together actually fits — it's flexible where it needs to be and firm where it needs to be. The launch went well but honestly the bigger win is that I now have something I'll use long after.`
+            message: ``
         },
         michael: {
             initials: 'MI',
