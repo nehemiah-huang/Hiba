@@ -277,11 +277,18 @@ p {
     .hero {
         background-attachment: scroll;
         background-position: center center;
-        padding: 6rem 1.5rem 3rem;
+        /* padding: 6rem 1.5rem 3rem; */
+
     }
 
     .hero-container {
         padding: 0;
+    }
+    .hero-subtitle {
+        display: none;
+    }
+    .hero-cta {
+        margin-top: 40px;
     }
 }
 
