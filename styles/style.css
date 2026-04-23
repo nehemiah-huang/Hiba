@@ -1372,6 +1372,17 @@ footer {
     transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        margin: 0 auto;
+    }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1000px) {
     .parallax-container {
