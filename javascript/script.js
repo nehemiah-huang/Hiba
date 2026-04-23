@@ -512,6 +512,7 @@ const testimonials = {
             initials: 'PG',
             name: 'Patrick Gentilezza',
             tag: 'Founder & Director - buro',
+            sigRole: 'Founder & Director - buro.',    
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
@@ -520,26 +521,29 @@ const testimonials = {
             initials: 'AA',
             name: 'Awurabena Asante',
             tag: 'Customer - buro',
+            sigRole: 'Customer - buro.',
             date: 'April 12, 2026',
             img: 'images/ama.jpg',
             message: `Good evening buro, just sending massive thanks for your support yesterday. 
-                    I appreciate the assistance on such short notice, especially how things were moved around just to accommodate me. 
-                    To Hiba, special thanks again. You really went above and beyond to diffuse a very tricky situation. I truly enjoyed interacting with you. 
+                    I appreciate the assistance on such short notice, especially how things were moved around just to accommodate me. <br><br>
+                    To Hiba, special thanks again. You really went above and beyond to diffuse a very tricky situation. I truly enjoyed interacting with you. <br><br>
                     Nevertheless, thanks to the entire team, for the support especially with going over the time limit. I can’t express my gratitude enough. 
                     God bless you all.`
         },
         kwesi: {
             initials: 'PG',
-            name: 'Patrick Gentilezzaadad',
+            name: 'Patrick Gentilezza',
             tag: 'Production Schedule',
+            sigRole: 'Founder & Director - buro.',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far 👏.`
         },
         Patrick: {
             initials: 'PG',
-            name: 'Patrick Gentilezzaadad',
+            name: 'Patrick Gentilezza',
             tag: 'Operations Management',
+            sigRole: 'Founder & Director - buro.',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `I have to praise someone this month: Hiba for 
@@ -598,6 +602,11 @@ const testimonials = {
             <div class="rp-divider"></div>
             <p class="rp-message">${data.message}</p>
         `;
+
+        // Signature — pulls from sigRole, not tag
+        document.getElementById('rp-sig-name').textContent = data.name;
+        document.getElementById('rp-sig-role').textContent = data.sigRole;
+        document.getElementById('rp-signature').style.display = 'block';
 
         const pane = document.getElementById('rpane');
         const inbox = document.querySelector('.inbox-body');

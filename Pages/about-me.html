@@ -512,6 +512,79 @@
             color: var(--gold);
             background: rgba(187,153,64,0.05);
         }
+        /* ===== TOOLS TICKER ===== */
+        .tools-ticker-wrap {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            padding: 1rem 0;
+        }
+
+        /* Fade edges */
+        .tools-ticker-wrap::before,
+        .tools-ticker-wrap::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 120px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .tools-ticker-wrap::before {
+            left: 0;
+            background: linear-gradient(to right, var(--bg-dark), transparent);
+        }
+
+        .tools-ticker-wrap::after {
+            right: 0;
+            background: linear-gradient(to left, var(--bg-dark), transparent);
+        }
+
+        .tools-ticker {
+            display: flex;
+            gap: 3rem;
+            width: max-content;
+            animation: ticker 30s linear infinite;
+        }
+
+        .tools-ticker:hover {
+            animation-play-state: paused;
+        }
+
+        .ticker-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 0;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .ticker-item:hover {
+            opacity: 1;
+        }
+
+        .ticker-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            filter: grayscale(100%) brightness(2);
+        }
+
+        .ticker-item span {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes ticker {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
 
         /* ===== CTA STRIP ===== */
         .cta-strip {
@@ -913,47 +986,58 @@
     </section>
 
     <!-- ===== TOOLS ===== -->
-    <section class="tools-section">
-        <div class="tools-inner">
-
-            <div class="tools-header">
-                <div class="tools-header-left reveal">
-                    <span class="section-tag">Toolkit</span>
-                    <h2>Adaptable Across Systems</h2>
-                </div>
-                <div class="tools-header-right reveal">
-                    <p>Familiar with the tools that power modern businesses — from project management to financial systems and creative platforms.</p>
-                </div>
+<section class="tools-section">
+    <div class="tools-inner">
+        <div class="tools-header">
+            <div class="tools-header-left reveal">
+                <span class="section-tag">Toolkit</span>
+                <h2>Adaptable Across Systems</h2>
             </div>
-
-            <div class="tools-grid reveal">
-                <span class="tool-tag">ClickUp</span>
-                <span class="tool-tag">Notion</span>
-                <span class="tool-tag">Asana</span>
-                <span class="tool-tag">Monday.com</span>
-                <span class="tool-tag">Zoho Books</span>
-                <span class="tool-tag">Zoho CRM</span>
-                <span class="tool-tag">QuickBooks</span>
-                <span class="tool-tag">Microsoft Office</span>
-                <span class="tool-tag">Microsoft Teams</span>
-                <span class="tool-tag">Slack</span>
-                <span class="tool-tag">Google Workspace</span>
-                <span class="tool-tag">Zoom</span>
-                <span class="tool-tag">Shopify</span>
-                <span class="tool-tag">WordPress</span>
-                <span class="tool-tag">Canva</span>
-                <span class="tool-tag">Nexudus</span>
+            <div class="tools-header-right reveal">
+                <p>Familiar with the tools that power modern businesses — from project management to financial systems and creative platforms.</p>
             </div>
-
         </div>
-    </section>
 
-    <!-- ===== CTA ===== -->
-    <!-- <section class="cta-strip">
-        <h2 class="reveal">Let's Build Something That Works</h2>
-        <p class="reveal">If you're ready to bring more clarity and structure to what you're building, I'd love to connect.</p>
-        <a href="index.html#contact" class="btn-gold reveal">Get Started →</a>
-    </section> -->
+        <div class="tools-ticker-wrap">
+            <div class="tools-ticker" id="toolsTicker">
+                <!-- Set 1 -->
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp"><span>ClickUp</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion"><span>Notion</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/asana/F06A6A" alt="Asana"><span>Asana</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/mondaydotcom/F62B54" alt="Monday.com"><span>Monday.com</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/quickbooks/2CA01C" alt="QuickBooks"><span>QuickBooks</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/microsoftteams/6264A7" alt="MS Teams"><span>MS Teams</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/microsoftoffice/D83B01" alt="MS Office"><span>MS Office</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack"><span>Slack</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Workspace"><span>Google Workspace</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom"><span>Zoom</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify"><span>Shopify</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"><span>WordPress</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"><span>Canva</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/paystack/00C3F7" alt="Paystack"><span>Paystack</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/zoho/E42527" alt="Zoho"><span>Zoho</span></div>
+
+                <!-- Set 2 — exact duplicate for seamless loop -->
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp"><span>ClickUp</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion"><span>Notion</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/asana/F06A6A" alt="Asana"><span>Asana</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/mondaydotcom/F62B54" alt="Monday.com"><span>Monday.com</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/quickbooks/2CA01C" alt="QuickBooks"><span>QuickBooks</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/microsoftteams/6264A7" alt="MS Teams"><span>MS Teams</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/microsoftoffice/D83B01" alt="MS Office"><span>MS Office</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack"><span>Slack</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Workspace"><span>Google Workspace</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom"><span>Zoom</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify"><span>Shopify</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"><span>WordPress</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"><span>Canva</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/paystack/00C3F7" alt="Paystack"><span>Paystack</span></div>
+                <div class="ticker-item"><img src="https://cdn.simpleicons.org/zoho/E42527" alt="Zoho"><span>Zoho</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- ===== FOOTER ===== -->
     <footer>
