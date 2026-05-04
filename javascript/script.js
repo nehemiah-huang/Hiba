@@ -511,8 +511,9 @@ const testimonials = {
         kwabena: {
             initials: 'PG',
             name: 'Patrick Gentilezza',
-            tag: 'Founder & Director - buro',
-            sigRole: 'Founder & Director - buro.',    
+            tag: 'Operations Responsibility Matrix',
+            sigName: 'Founder & Director',
+            sigRole: 'Shared workspaces and offices',    
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
@@ -520,7 +521,7 @@ const testimonials = {
         ama: {
             initials: 'AA',
             name: 'Awurabena Asante',
-            tag: 'Customer - buro',
+            tag: 'Client Experience',
             sigRole: 'Customer - buro.',
             date: 'April 12, 2026',
             img: 'images/ama.jpg',
@@ -534,7 +535,8 @@ const testimonials = {
             initials: 'PG',
             name: 'Patrick Gentilezza',
             tag: 'Production Schedule',
-            sigRole: 'Founder & Director - buro.',
+            sigName: 'Founder & Director',
+            sigRole: 'Shared workspaces and offices',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far 👏.`
@@ -543,7 +545,8 @@ const testimonials = {
             initials: 'PG',
             name: 'Patrick Gentilezza',
             tag: 'Operations Management',
-            sigRole: 'Founder & Director - buro.',
+            sigName: 'Founder & Director',
+            sigRole: 'Shared workspaces and offices',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `I have to praise someone this month: Hiba for 
@@ -554,6 +557,8 @@ const testimonials = {
             initials: 'PG',
             name: 'Patrick Gentilezza',
             tag: 'Founder & Director - buro',
+            sigName: 'Founder & Director',
+            sigRole: 'Shared workspaces and offices',
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far. 👏`
@@ -604,7 +609,7 @@ const testimonials = {
         `;
 
         // Signature — pulls from sigRole, not tag
-        document.getElementById('rp-sig-name').textContent = data.name;
+        document.getElementById('rp-sig-name').textContent = data.sigName;
         document.getElementById('rp-sig-role').textContent = data.sigRole;
         document.getElementById('rp-signature').style.display = 'block';
 
