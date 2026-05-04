@@ -322,8 +322,8 @@ class ReadingsSlider {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    initParallaxEffects(); // Initialize both parallax effects
-    new ReadingsSlider();  // Initialize slider
+    initParallaxEffects();
+    if (document.getElementById('sliderContainer')) new ReadingsSlider();
 });
 
 //HOVER CARDS - keeping this just incase 
@@ -486,7 +486,7 @@ document.head.appendChild(style);
 window.addEventListener('resize', debounce(() => {
     const navMenu = document.getElementById('nav-menu');
     const navHamburger = document.getElementById('nav-hamburger');
-    if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+    if (navMenu && navHamburger && window.innerWidth > 768 && navMenu.classList.contains('active')) {
         navHamburger.classList.remove('active');
         navMenu.classList.remove('active');
         document.body.style.overflow = 'auto';
@@ -496,14 +496,15 @@ window.addEventListener('resize', debounce(() => {
 
 // INITIALIZE EVERYTHING 
 document.addEventListener('DOMContentLoaded', () => {
-    initNavigation();
+    if (document.getElementById('navbar')) initNavigation();
     initParallaxEffects();
-    initHoverCards();
+    if (document.querySelector('.grid-item')) initHoverCards();
     initScrollAnimations();
     initContactForm();
-    initProjectCards();
+    if (document.querySelector('.project-card')) initProjectCards();
     initActiveNavLinks();
     initFooter();
+    if (document.getElementById('sliderContainer')) new ReadingsSlider();
     console.log('✅ Portfolio website initialized successfully!');
 });
 
@@ -513,7 +514,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Operations Responsibility Matrix',
             sigName: 'Founder & Director',
-            sigRole: 'Shared workspaces and offices',    
+            sigRole: 'buro. | Shared workspaces and offices',    
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
@@ -536,7 +537,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Production Schedule',
             sigName: 'Founder & Director',
-            sigRole: 'Shared workspaces and offices',
+            sigRole: 'buro. | Shared workspaces and offices',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far 👏.`
@@ -546,7 +547,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Operations Management',
             sigName: 'Founder & Director',
-            sigRole: 'Shared workspaces and offices',
+            sigRole: 'buro. | Shared workspaces and offices',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `I have to praise someone this month: Hiba for 
@@ -558,7 +559,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Founder & Director - buro',
             sigName: 'Founder & Director',
-            sigRole: 'Shared workspaces and offices',
+            sigRole: 'buro. | Shared workspaces and offices',
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far. 👏`
@@ -660,8 +661,9 @@ const testimonials = {
         });
     }
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 680) {
-            document.getElementById('mob-overlay').classList.remove('visible');
-        }
-    });
+   window.addEventListener('resize', () => {
+    const mobOverlay = document.getElementById('mob-overlay');
+    if (mobOverlay && window.innerWidth > 680) {
+        mobOverlay.classList.remove('visible');
+    }
+});
