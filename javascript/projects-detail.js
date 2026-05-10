@@ -65,7 +65,7 @@ The platform's scale introduced critical challenges. Diverse users required stru
       highlights: [
         {
           title: 'RFID Tracking System',
-          body: 'To streamline asset tracking, I led the setup of a system to monitor the distribution and use of RFID tags. This ensured accurate tracking, smooth delivery, and reliable oversight of waste management assets.',
+          body: '',
           points: [
             'Designed and implemented an RFID tracking framework',
             'Coordinated delivery schedules to municipalities and operators',
@@ -74,7 +74,7 @@ The platform's scale introduced critical challenges. Diverse users required stru
         },
         {
           title: '1 Million Bin Project',
-          body: 'I spearheaded operational systems for the nationwide "1 Million Bin" distribution project. Citizens could request free bins through a short code, and my role was to design processes that handled these requests end-to-end.',
+          body: '',
           points: [
             'Established and managed a dedicated call center to handle bin requests and inquiries',
             'Built a tracking system for all inquiries and follow-ups to ensure accountability',
@@ -156,7 +156,7 @@ This called for someone comfortable operating between creativity and commerce, b
       highlights: [
         {
           title: 'Agbumite Street Art Festival',
-          body: 'The Agbumite Festival, held in the La community of Accra, is a vibrant street art celebration connected to the La Homowo festivities. In 2023, the festival brought together contemporary artists, performers, and cultural practitioners — including Serge Attukwei Clottey and organizations like GoLokal and 360 Projects GH. I worked closely with Ghanaian visual artist Awo Tsegah to prepare her participation.',
+          body: '',
           points: [
             'Coordinated the preparation and installation of Awo Tsegah\'s artwork for the festival in Labadi',
             'Liaised with artist and festival to ensure smooth participation',
@@ -224,7 +224,7 @@ Delivering these events depended on careful coordination across production sched
       highlights: [
         {
           title: 'The Magna Carta Experience',
-          body: 'Hosted by Villa Grace in partnership with Veuve Clicquot, The Magna Carta is an annual lifestyle event blending fine dining, music, and luxury hospitality during Accra\'s peak holiday season. The 2024 edition required transforming Polo Beach Club into a fully realized experiential environment within an extremely tight timeframe — production began less than 24 hours before guest arrival, following New Year celebrations that left the venue in active use.',
+          body: '',
           points: [
             'Coordinated production schedules and vendor activities for the full event build',
             'Supported vendor logistics and installation planning under a compressed timeline',
