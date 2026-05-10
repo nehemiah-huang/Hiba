@@ -306,3 +306,30 @@
     font-size: 1.4rem;
   }
 }
+@media (max-width: 768px) {
+    .detail-meta-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .detail-meta-group {
+        width: 100%;
+    }
+
+    /* Make Year sit inline with its label instead of floating */
+    .detail-meta-row .detail-meta-group:last-child {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .detail-meta-row .detail-meta-group:last-child .detail-meta-label {
+        margin-bottom: 0;
+    }
+
+    /* Tags wrap naturally on mobile */
+    .detail-meta-row .project-tags {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
