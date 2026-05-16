@@ -372,35 +372,37 @@ a.info-value:hover {
         <div class="contact-grid">
 
             <!-- Left: Form -->
-            <div class="contact-form-wrap">
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">What's this about?</label>
-                        <select id="subject" name="subject">
-                            <option value="" disabled selected>Select an option</option>
-                            <option value="personal-assistance">Personal Assistance</option>
-                            <option value="operational-support">Operational Support</option>
-                            <option value="systems-setup">Systems Setup</option>
-                            <option value="strategic-partner">Strategic Partner</option>
-                            <option value="other">Something else</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you're working on and what kind of support you're looking for..." required></textarea>
-                    </div>
-                    <button type="submit" class="form-submit">Send Message →</button>
-                    <p class="form-note">I typically respond within 24–48 hours.</p>
-                </form>
-            </div>
+        <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" 
+                action="https://formspree.io/f/mnjraajg" 
+                method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">What's this about?</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="personal-assistance">Personal Assistance</option>
+                        <option value="operational-support">Operational Support</option>
+                        <option value="systems-setup">Systems Setup</option>
+                        <option value="strategic-partner">Strategic Partner</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you're working on and what kind of support you're looking for..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message →</button>
+                <p class="form-note">I typically respond within 24–48 hours.</p>
+            </form>
+        </div>
 
             <!-- Right: Info + Booking -->
             <div class="contact-info">
