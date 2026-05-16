@@ -523,7 +523,7 @@ const testimonials = {
             initials: 'AA',
             name: 'Awurabena Asante',
             tag: 'Client Experience',
-            sigRole: 'Customer - buro.',
+            sigRole: `Customer  ${'<br><br>'} buro. | Shared workspaces and offices`,
             date: 'April 12, 2026',
             img: 'images/ama.jpg',
             message: `Good evening buro, just sending massive thanks for your support yesterday. 
@@ -611,7 +611,7 @@ const testimonials = {
 
         // Signature — pulls from sigRole, not tag
         document.getElementById('rp-sig-name').textContent = data.sigName;
-        document.getElementById('rp-sig-role').textContent = data.sigRole;
+        document.getElementById('rp-sig-role').innerHTML = data.sigRole;
         document.getElementById('rp-signature').style.display = 'block';
 
         const pane = document.getElementById('rpane');
