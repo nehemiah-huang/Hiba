@@ -31,7 +31,7 @@
 
         html { scroll-behavior: smooth; }
 
-        body { 
+        body {
             font-family: 'Inter', sans-serif;
             background: var(--bg-survey);
             color: var(--text-primary);
@@ -335,7 +335,7 @@
         .field-input:focus,
         .field-textarea:focus {
             border-color: var(--border-gold);
-            background: #2e2e2e;
+            background: #ffffff;
         }
 
         .field-input::placeholder,
@@ -452,21 +452,11 @@
         }
 
         .success-back {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.9rem 2.2rem;
-            border: 1px solid var(--border-gold);
-            border-radius: var(--radius);
-            color: var(--gold);
+            color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-
-        .success-back:hover {
-            background: var(--gold-subtle);
+            font-size: 0.88rem;
+            transition: color 0.2s;
+            margin-top: 3rem;
         }
 
         /* ===== ERROR ===== */
@@ -985,11 +975,10 @@
                         <select class="field-input" id="field-source" style="cursor:pointer; appearance:auto;">
                             <option value="" disabled selected>Select an option</option>
                             <option>Google</option>
+                            <option>Referral</option>
                             <option>Instagram</option>
-                            <option>LinkedIn</option>
-                            <option>Twitter / X</option>
-                            <option>Referral from a friend or colleague</option>
-                            <option>A previous client</option>
+                            <option>A client</option>
+                            <option>Linkedin</option>
                             <option>Other</option>
                         </select>
                     </div>
@@ -1019,10 +1008,12 @@
             </div>
             <h2 class="success-title">You're all done.</h2>
             <p class="success-body">
-                Thank you for taking the time to fill this in — it genuinely helps.<br><br>
-                The next step is a short, no-commitment conversation. I'll ask a few questions, you can ask yours, and we'll figure out together whether this is the right fit.
+                We’ll be in touch if we need anything else. <br><br>
+                In the meantime, 
+                the best next step is booking a short call so we can also answer any questions you have 
+                and get a clearer picture of what working together could look like.
             </p>
-            <a href="https://calendar.app.google/72EB2iGCSsf1C4K88" target="_blank" class="btn-next" style="text-decoration:none; margin: 0 auto;">
+            <a href="https://calendar.app.google/72EB2iGCSsf1C4K88" target="_blank" class="btn-next" style="text-decoration:none; margin: 0 auto; width:fit-content;">
                 Schedule a call
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>
             </a>
