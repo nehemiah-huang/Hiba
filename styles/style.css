@@ -1537,3 +1537,9 @@ padding: 1rem 1.5rem;
     right: 20px;
     font-size: 1.3rem;
 }}
+
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+}
