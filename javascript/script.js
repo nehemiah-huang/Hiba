@@ -389,8 +389,42 @@ function initScrollAnimations() {
 
 
 // CONTACT FORM 
-function initContactForm() { 
-    const contactForm = document.getElementById('contact-form'); if (!contactForm) return; contactForm.addEventListener('submit', e => { e.preventDefault(); const formData = new FormData(contactForm); const name = formData.get('name'); const email = formData.get('email'); const message = formData.get('message'); if (!name || !email || !message) { alert('Please fill in all fields.'); return; } const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; if (!emailRegex.test(email)) { alert('Please enter a valid email address.'); return; } const submitBtn = contactForm.querySelector('.form-submit'); const originalText = submitBtn.textContent; submitBtn.textContent = 'Sending...'; submitBtn.disabled = true; setTimeout(() => { alert("Thank you for your message! I'll get back to you soon."); contactForm.reset(); submitBtn.textContent = originalText; submitBtn.disabled = false; }, 2000); });
+function initContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', async e => {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('.form-submit');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                contactForm.reset();
+                submitBtn.textContent = '✓ Message Sent!';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 4000);
+            } else {
+                throw new Error('Failed');
+            }
+        } catch {
+            submitBtn.textContent = 'Something went wrong — try again';
+            submitBtn.disabled = false;
+        }
+    });
 }
 
 
