@@ -517,7 +517,7 @@ const testimonials = {
             sigRole: 'buro. | Shared workspaces and offices',    
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
-            message: `Keep your good performance and keep taking more ownership. This is not the end. I am genuinely impressed. More to come.`
+            message: `Keep your good performance and keep taking more ownership. . I am genuinely impressed.`
         },
         ama: {
             initials: 'AA',
