@@ -529,7 +529,7 @@ const testimonials = {
             message: `Good evening buro, just sending massive thanks for your support yesterday. 
                     I appreciate the assistance on such short notice, especially how things were moved around just to accommodate me. <br><br>
                     To Hiba, special thanks again. You really went above and beyond to diffuse a very tricky situation. I truly enjoyed interacting with you. <br><br>
-                    Nevertheless, thanks to the entire team, for the support especially with going over the time limit. I can’t express my gratitude enough. 
+                    Nevertheless, thanks to the entire team, for the support. I can’t express my gratitude enough. 
                     God bless you all.`
         },
         kwesi: {
@@ -540,7 +540,7 @@ const testimonials = {
             sigRole: 'buro. | Shared workspaces and offices',
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
-            message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far 👏.`
+            message: `Almost perfect! Great job! This is the best anyone has done so far 👏.`
         },
         Patrick: {
             initials: 'PG',
