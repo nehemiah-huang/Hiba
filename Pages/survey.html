@@ -1141,10 +1141,13 @@
             };
 
             try {
+                const formData = new FormData();
+                Object.entries(payload).forEach(([key, val]) => formData.append(key, val));
+
                 const res = await fetch('https://formspree.io/f/mnjraajg', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify(payload)
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
                 });
 
                 if (res.ok) {
