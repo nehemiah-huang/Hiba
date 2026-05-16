@@ -17,22 +17,23 @@
             --gold-subtle: rgba(187, 153, 64, 0.08);
             --bg: #1a1a1a;
             --bg-dark: #111111;
-            --bg-card: #222222;
-            --bg-option: #2a2a2a;
-            --bg-option-hover: #303030;
-            --text-primary: #E6E6E6;
-            --text-secondary: #B3B3B3;
-            --text-muted: #6b6b6b;
-            --border: rgba(230, 230, 230, 0.08);
-            --border-gold: rgba(187, 153, 64, 0.35);
+            --bg-card: #ffffff;
+            --bg-option: #ffffff;
+            --bg-option-hover: #f0ece6;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-muted: #888888;
+            --border: rgba(0, 0, 0, 0.1);
+            --border-gold: rgba(187, 153, 64, 0.5);
             --radius: 10px;
+            --bg-survey: #f5f2ee;
         }
 
         html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--bg);
+            background: var(--bg-survey);
             color: var(--text-primary);
             min-height: 100vh;
             overflow-x: hidden;
@@ -47,7 +48,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: rgba(17, 17, 17, 0.92);
+            background: rgba(245, 242, 238, 0.92);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
         }
@@ -85,7 +86,7 @@
             position: fixed;
             top: 57px; left: 0; right: 0;
             z-index: 99;
-            background: var(--bg-dark);
+            background: var(--bg-survey);
             border-bottom: 1px solid var(--border);
             padding: 0.75rem 2.5rem;
             display: flex;
@@ -96,7 +97,7 @@
         .progress-bar-track {
             flex: 1;
             height: 3px;
-            background: rgba(230,230,230,0.08);
+            background: rgba(0, 0, 0, 0.1);
             border-radius: 99px;
             overflow: hidden;
         }
@@ -956,23 +957,44 @@
             <!-- SLIDE 11 — CONTACT -->
             <div class="slide" data-slide="11">
                 <p class="q-step">Question 10 of 10</p>
-                <h2 class="q-title">Last step — a little about you.</h2>
-                <p class="q-subtitle">So I know who I'm talking to and how to reach you.</p>
+                <h2 class="q-title">Thanks! Last step.</h2>
+                <p class="q-subtitle">Fill in your details to help me personalise our conversation with you.</p>
                 <div class="fields">
                     <div class="field-group">
-                        <label class="field-label">Your name <span class="required">*</span></label>
-                        <input class="field-input" type="text" id="field-name" placeholder="e.g. Ama Mensah" autocomplete="name">
+                        <label class="field-label">First name <span class="required">*</span></label>
+                        <input class="field-input" type="text" id="field-firstname" placeholder="e.g. Ama" autocomplete="given-name">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Last name <span class="required">*</span></label>
+                        <input class="field-input" type="text" id="field-lastname" placeholder="e.g. Mensah" autocomplete="family-name">
                     </div>
                     <div class="field-group">
                         <label class="field-label">Email address <span class="required">*</span></label>
                         <input class="field-input" type="email" id="field-email" placeholder="you@example.com" autocomplete="email">
                     </div>
                     <div class="field-group">
-                        <label class="field-label">Anything else you'd like me to know? <span style="color:var(--text-muted); font-weight:400; text-transform:none; letter-spacing:0;">(optional)</span></label>
-                        <textarea class="field-textarea" id="field-message" placeholder="A bit of context, a specific challenge, a question — whatever feels right."></textarea>
+                        <label class="field-label">Company name <span style="color:var(--text-muted); font-weight:400; text-transform:none; letter-spacing:0;">(optional)</span></label>
+                        <input class="field-input" type="text" id="field-company" placeholder="e.g. Acme Ltd" autocomplete="organization">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Phone number <span class="required">*</span></label>
+                        <input class="field-input" type="tel" id="field-phone" placeholder="e.g. +233 24 000 0000" autocomplete="tel">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">How did you hear about me? <span class="required">*</span></label>
+                        <select class="field-input" id="field-source" style="cursor:pointer; appearance:auto;">
+                            <option value="" disabled selected>Select an option</option>
+                            <option>Google</option>
+                            <option>Instagram</option>
+                            <option>LinkedIn</option>
+                            <option>Twitter / X</option>
+                            <option>Referral from a friend or colleague</option>
+                            <option>A previous client</option>
+                            <option>Other</option>
+                        </select>
                     </div>
                 </div>
-                <div class="form-error" id="formError">Please fill in your name and a valid email address.</div>
+                <div class="form-error" id="formError">Please fill in all required fields with valid information.</div>
                 <div class="nav-row">
                     <button class="btn-back" onclick="goBack()">
                         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13L5 8l5-5"/></svg>
@@ -988,6 +1010,7 @@
         </div>
 
         <!-- SUCCESS -->
+<!-- SUCCESS -->
         <div class="success-screen" id="successScreen">
             <div class="success-icon">
                 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -997,9 +1020,13 @@
             <h2 class="success-title">You're all done.</h2>
             <p class="success-body">
                 Thank you for taking the time to fill this in — it genuinely helps.<br><br>
-                I'll be in touch within <strong style="color:var(--gold);">48 hours</strong> to find a time that works for both of us. In the meantime, feel free to look around.
+                The next step is a short, no-commitment conversation. I'll ask a few questions, you can ask yours, and we'll figure out together whether this is the right fit.
             </p>
-            <a href="../index.html" class="success-back">
+            <a href="https://calendar.app.google/72EB2iGCSsf1C4K88" target="_blank" class="btn-next" style="text-decoration:none; margin: 0 auto;">
+                Schedule a call
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>
+            </a>
+            <a href="../index.html" class="success-back" style="margin-top: 1rem;">
                 ← Back to the site
             </a>
         </div>
@@ -1116,15 +1143,18 @@
 
         // ── Submit ────────────────────────────────────────────
         async function submitForm() {
-            const name = document.getElementById('field-name').value.trim();
+            const firstname = document.getElementById('field-firstname').value.trim();
+            const lastname = document.getElementById('field-lastname').value.trim();
             const email = document.getElementById('field-email').value.trim();
-            const message = document.getElementById('field-message').value.trim();
+            const company = document.getElementById('field-company').value.trim();
+            const phone = document.getElementById('field-phone').value.trim();
+            const source = document.getElementById('field-source').value;
             const errorEl = document.getElementById('formError');
             const btn = document.getElementById('next-11');
 
             const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-            if (!name || !emailValid) {
+            if (!firstname || !lastname || !emailValid || !phone || !source) {
                 errorEl.classList.add('visible');
                 return;
             }
@@ -1134,9 +1164,11 @@
             btn.innerHTML = '<div class="spinner"></div> Sending...';
 
             const payload = {
-                name,
+                name: `${firstname} ${lastname}`,
                 email,
-                message: message || '—',
+                company: company || '—',
+                phone,
+                how_did_you_hear: source,
                 ...answers
             };
 
