@@ -523,7 +523,7 @@ const testimonials = {
             initials: 'AA',
             name: 'Awurabena Asante',
             tag: 'Client Experience',
-            sigRole: `Customer  ${'<br><br>'} buro. | Shared workspaces and offices`,
+            sigRole: `Customer  ${'<br>'} buro. | Shared workspaces and offices`,
             date: 'April 12, 2026',
             img: 'images/ama.jpg',
             message: `Good evening buro, just sending massive thanks for your support yesterday. 
