@@ -6,7 +6,7 @@
     const projectData = {
 
       0: {
-        eyebrow: 'Nerasol Ghana Limited — Solo Founder',
+        eyebrow: 'Nerasol Ghana Limited — Enterprise',
         title: 'Driving Adoption and Reliability at Scale',
         year: '2023',
         tags: ['Operations & Systems', 'Project Coordination', 'Accounts & Reporting'],
@@ -53,7 +53,7 @@
       },
 
       1: {
-        eyebrow: 'AYA Editions — Small Team',
+        eyebrow: 'AYA Editions — Solo Founder',
         title: 'Strengthening the Digital and Commercial Foundations of a Cultural Publishing Platform',
         year: '2023',
         tags: ['Operations & Systems', 'Launch Support', 'Strategic Oversight', 'Accounts & Reporting'],
@@ -110,7 +110,7 @@
       },
 
       2: {
-        eyebrow: 'Event Production Studio — Solo Founder',
+        eyebrow: 'Event Production Studio — Growing Team',
         title: 'Coordinating the Systems Behind Experiential Projects',
         year: '2024',
         tags: ['Operations & Systems', 'Project Coordination', 'Workflow Design', 'Accounts & Reporting'],
@@ -150,7 +150,7 @@
       },
 
       3: {
-        eyebrow: 'A Life of Design — Studio',
+        eyebrow: 'A Life of Design — Solo Founder',
         title: 'Accelerating Growth for a Founder-Led Experiential Design Studio',
         year: '2024',
         tags: ['Operations & Systems', 'Strategic Oversight', 'Workflow Design', 'Accounts & Reporting'],
