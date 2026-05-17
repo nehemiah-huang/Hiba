@@ -101,13 +101,13 @@ p {
     text-transform: uppercase;
 }
 .nav-logo-image {
+    display: none;
     width: 90px;
     height: 50px;
     object-fit: contain;
     transition: opacity 0.3s ease;
     cursor: pointer;
 }
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -1476,9 +1476,9 @@ footer {
         background: rgba(26, 26, 26, 0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-end;
-        padding: 6rem 2.5rem 3rem;
+        padding: 10rem 2.5rem 3rem;
         gap: 2.5rem;
         transition: right 0.3s ease;
         z-index: 1000;
@@ -1496,6 +1496,7 @@ footer {
     }
 
     .nav-menu-logo img {
+        display: block;
         width: 80px;
         height: 45px;
         object-fit: contain;
