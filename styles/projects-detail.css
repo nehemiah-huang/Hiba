@@ -1,6 +1,7 @@
 /* ===== DETAIL VIEW ===== */
-/* Append these styles to the bottom of projects.css */
-
+:root {
+  text-align: justify;
+}
 /* ── Back button ── */
 .detail-back {
   display: inline-flex;
