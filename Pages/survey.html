@@ -957,12 +957,8 @@
                 <p class="q-subtitle">Fill in your details to help me personalise our conversation with you.</p>
                 <div class="fields">
                     <div class="field-group">
-                        <label class="field-label">First name <span class="required">*</span></label>
-                        <input class="field-input" type="text" id="field-firstname" placeholder="e.g. Ama" autocomplete="given-name">
-                    </div>
-                    <div class="field-group">
-                        <label class="field-label">Last name <span class="required">*</span></label>
-                        <input class="field-input" type="text" id="field-lastname" placeholder="e.g. Mensah" autocomplete="family-name">
+                        <label class="field-label">Full name <span class="required">*</span></label>
+                        <input class="field-input" type="text" id="field-fullName" placeholder="e.g. Carl Johnson" autocomplete="given-name">
                     </div>
                     <div class="field-group">
                         <label class="field-label">Email address <span class="required">*</span></label>
@@ -1144,8 +1140,7 @@
 
         // ── Submit ────────────────────────────────────────────
         async function submitForm() {
-            const firstname = document.getElementById('field-firstname').value.trim();
-            const lastname = document.getElementById('field-lastname').value.trim();
+            const fullName = document.getElementById('field-fullName').value.trim();
             const email = document.getElementById('field-email').value.trim();
             const company = document.getElementById('field-company').value.trim();
             const phone = document.getElementById('field-phone').value.trim();
@@ -1155,7 +1150,7 @@
 
             const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-            if (!firstname || !lastname || !emailValid || !phone || !source) {
+            if (!fullName || !emailValid || !phone || !source) {
                 errorEl.classList.add('visible');
                 return;
             }
@@ -1165,7 +1160,7 @@
             btn.innerHTML = '<div class="spinner"></div> Sending...';
 
             const payload = {
-                name: `${firstname} ${lastname}`,
+                name: `${firstname}`,
                 email,
                 company: company || '—',
                 phone,

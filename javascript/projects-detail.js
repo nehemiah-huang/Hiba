@@ -159,7 +159,7 @@ This called for someone comfortable operating between creativity and commerce, b
           body: '',
           points: [
             'Coordinated the preparation and installation of Awo Tsegah\'s artwork for the festival in Labadi',
-            'Liaised with artist and festival to ensure smooth participation',
+            'Liaised with authorities to ensure smooth participation',
             'Supported logistical preparation and setup for the exhibition environment',
             'Contributed to expanding the visibility of AYA Editions\' artists within Ghana\'s contemporary art scene'
           ]
@@ -395,10 +395,6 @@ Like many founder-led creative studios, much of the knowledge that kept projects
             <div class="detail-meta-group">
               <span class="detail-meta-label">Industry</span>
               <div class="project-tags">${industryHTML}</div>
-            </div>
-            <div class="detail-meta-group">
-              <span class="detail-meta-label">Year</span>
-              <div class="detail-year">${p.year}</div>
             </div>
           </div>
         </div>

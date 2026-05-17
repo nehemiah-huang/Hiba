@@ -185,12 +185,13 @@
 }
 
 .detail-list li::before {
-  content: '—';
+  content: '✓';
   position: absolute;
   left: 0;
   color: #bb9940;
   font-size: 11px;
   top: 0.4rem;
+
 }
 
 /* ── Solutions grid ── */
