@@ -138,7 +138,7 @@ p {
 }
 
 .nav-logo-image {
-    display: none;
+    display: block;
     width: 90px;
     height: 50px;
     object-fit: contain;
@@ -1515,5 +1515,26 @@ footer {
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
+    }
+}
+
+
+/* Mobile-only elements hidden by default */
+.nav-cta-drawer { display: none; }
+.nav-cta-bar    { display: none; }
+ 
+@media (max-width: 768px) {
+    /* Hide the desktop CTA inside the drawer */
+    .nav-cta-desktop { display: none; }
+ 
+    /* Show "Are We a Fit?" inside the open drawer */
+    .nav-cta-drawer  { display: inline-block; }
+ 
+    /* Show "Get Started" in the bar next to the hamburger */
+    .nav-cta-bar {
+        display: inline-block;
+        /* Slightly smaller so it doesn't crowd the hamburger */
+        font-size: 0.8rem;
+        padding: 0.4rem 0.85rem;
     }
 }

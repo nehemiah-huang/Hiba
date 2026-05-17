@@ -14,35 +14,55 @@
 <body>
 
     <!-- Navigation Header -->
-    <header class="navbar" id="navbar">
-        <nav class="nav-container">
-            <div class="nav-logo">
-                <img 
-                    class="nav-logo-image" 
-                    src="" 
-                    alt="Hiba F. Logo" 
-                    onerror="this.style.display='none'; this.insertAdjacentHTML(
-                        'afterend',
-                        '<span>FRACTIONAL OPS PARTNER <span class=&quot;mobile-hide&quot;>FOR FOUNDERS</span></span>'
-                    );"
+<header class="navbar" id="navbar">
+    <nav class="nav-container">
+ 
+        <!-- Logo -->
+        <div class="nav-logo">
+            <img
+                class="nav-logo-image"
+                src=""
+                alt="Hiba F. Logo"
+                onerror="this.style.display='none'; this.insertAdjacentHTML(
+                    'afterend',
+                    '<span>FRACTIONAL OPS PARTNER <span class=&quot;mobile-hide&quot;>FOR FOUNDERS</span></span>'
+                );"
+            >
+        </div>
+ 
+        <!-- Nav menu (desktop + mobile drawer) -->
+        <div class="nav-menu" id="nav-menu">
+ 
+            <!-- Logo inside open drawer (mobile only) -->
+            <div class="nav-menu-logo">
+                <img
+                    class="nav-logo-image"
+                    src="Images/hiba-white.png"
+                    alt="Hiba"
+                    onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span>FRACTIONAL OPS PARTNER</span>');"
                 >
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <div class="nav-menu-logo">
-                    <img class="nav-logo-image" src="Images/hiba-white.png" alt="Hiba"
-                        onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span>FRACTIONAL OPS PARTNER</span>');">
-                </div>
-                <a href="Pages/about-me.html" class="nav-link">About me</a>
-                <a href="Pages/projects.html" class="nav-link">Projects</a>
-                <a href="Pages/survey.html" class="nav-cta">Get Started →</a>
-            </div>
-            <div class="nav-hamburger" id="nav-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+ 
+            <a href="Pages/about-me.html" class="nav-link">About me</a>
+            <a href="Pages/projects.html" class="nav-link">Projects</a>
+ 
+            <!-- Desktop: Get Started (hidden on mobile) -->
+            <a href="Pages/survey.html" class="nav-cta nav-cta-desktop">Get Started →</a>
+ 
+            <!-- Mobile drawer: Are We a Fit? (hidden on desktop) -->
+            <a href="Pages/survey.html" class="nav-cta nav-cta-drawer">Are We a Fit? →</a>
+ 
+        </div>
+ 
+        <!-- Hamburger -->
+        <div class="nav-hamburger" id="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+ 
+    </nav>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
