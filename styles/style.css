@@ -1240,8 +1240,8 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        padding: 10rem 2.5rem 3rem;
-        gap: 2.5rem;
+        padding: 5rem 2.5rem 3rem;
+        gap: 1.8rem;
         z-index: 1000;
         transition: right 0.3s ease;
     }
@@ -1274,7 +1274,10 @@ footer {
     }
 
     .nav-link {
-        font-size: 1.1rem;
+        font-size: 1.3rem;          
+        font-weight: 300;           
+        letter-spacing: 0.2px;
+        color: var(--text-primary);
     }
 
     .nav-cta {
@@ -1302,7 +1305,7 @@ footer {
         padding: 1em;
     }
 
-    /* Sections — unified padding */
+    /* Sections */
     .parallax-section,
     .intro-section,
     .process-section,
@@ -1528,7 +1531,16 @@ footer {
     .nav-cta-desktop { display: none; }
  
     /* Show "Are We a Fit?" inside the open drawer */
-    .nav-cta-drawer  { display: inline-block; }
+    .nav-cta-drawer {
+        display: inline-block;
+        font-size: 0.82rem;          /* noticeably smaller than the links */
+        font-weight: 400;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;         /* pill */
+        border: 1px solid rgba(187, 153, 64, 0.45);
+        background: transparent;
+        margin-top: 0.25rem;         /* small extra gap before button */
+    }
  
     /* Show "Get Started" in the bar next to the hamburger */
     .nav-cta-bar {
