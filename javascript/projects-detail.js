@@ -53,7 +53,7 @@ The platform's scale introduced critical challenges. Diverse users required stru
         },
         {
           title: 'Growth',
-          body: 'Proactive involvement turned IWMIS into more than a record-keeping system — it became a backbone for decision-making and financial clarity across the waste management ecosystem.',
+          body: 'Proactive involvement turned IWMIS into more than a record-keeping system. It became a backbone for decision-making and financial clarity across the waste management ecosystem.',
           points: [
             'Collected and analyzed user feedback to refine workflows and features',
             'Identified inefficiencies in operations and proposed system improvements',
