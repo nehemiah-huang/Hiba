@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    
     <style>
         /* ===== RESET & BASE ===== */
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,96 +46,6 @@
         }
 
         p { font-family: 'Inter', sans-serif; line-height: 1.8; color: var(--text-secondary); }
-
-        /* ===== NAVIGATION ===== */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(26,26,26,0.97);
-            border-bottom: 1px solid var(--border-subtle);
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.2rem 3rem;
-        }
-
-        .nav-logo-image {
-            width: 90px; height: 50px;
-            object-fit: contain;
-            cursor: pointer;
-        }
-
-        .nav-logo-text {
-            font-family: 'Playfair Display', serif;
-            color: var(--gold);
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-decoration: none;
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-        }
-
-        .nav-link {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-link:hover { color: var(--gold); }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px; left: 0;
-            width: 0; height: 2px;
-            background: var(--gold);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after { width: 100%; }
-
-        .nav-cta {
-            color: var(--gold);
-            text-decoration: none;
-            border: 2px solid var(--gold);
-            padding: 0.7rem 1.8rem;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-cta:hover { background: var(--gold); color: #1a1a1a; }
-
-        .nav-hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 4px;
-            z-index: 1001;
-        }
-
-        .nav-hamburger span {
-            width: 25px; height: 2px;
-            background: var(--text-primary);
-            transition: all 0.3s ease;
-            display: block;
-        }
 
         /* ===== HERO — ABOUT ===== */
         .about-hero {
@@ -977,24 +889,55 @@ footer {
 <body>
 
     <!-- Navigation -->
-    <header class="navbar" id="navbar">
-        <nav class="nav-container">
-            <div class="nav-logo">
-                <img class="nav-logo-image" src="/Images/hiba-white.png" alt="Hiba"
-                     onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<a href=\'index.html\' class=\'nav-logo-text\'>Hiba</a>');">
+<header class="navbar" id="navbar">
+    <nav class="nav-container">
+ 
+        <!-- Logo -->
+        <div class="nav-logo">
+            <img
+                class="nav-logo-image"
+                src=""
+                alt="Hiba F. Logo"
+                onerror="this.style.display='none'; this.insertAdjacentHTML(
+                    'afterend',
+                    '<span>FRACTIONAL OPS PARTNER <span class=&quot;mobile-hide&quot;>FOR FOUNDERS</span></span>'
+                );"
+            >
+        </div>
+ 
+        <!-- Nav menu (desktop + mobile drawer) -->
+        <div class="nav-menu" id="nav-menu">
+ 
+            <!-- Logo inside open drawer (mobile only) -->
+            <div class="nav-menu-logo">
+                <img
+                    class="nav-logo-image"
+                    src="/Images/hiba-white.png"
+                    alt="Hiba"
+                    onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span>FRACTIONAL OPS PARTNER</span>');"
+                >
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/projects/" class="nav-link">Projects</a>
-                <!-- <a href="index.html#projects" class="nav-link">Solutions</a> -->
-                <!-- <a href="contacts.html" class="nav-link">Contact</a> -->
-                <a href="/survey/" class="nav-cta">Get Started →</a>
-            </div>
-            <div class="nav-hamburger" id="nav-hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
+ 
+            <a href="/" class="nav-link">Home</a>
+            <a href="/projects/" class="nav-link">Projects</a>
+ 
+            <!-- Desktop: Get Started (hidden on mobile) -->
+            <a href="/survey/" class="nav-cta nav-cta-desktop">Get Started →</a>
+ 
+            <!-- Mobile drawer: Are We a Fit? (hidden on desktop) -->
+            <a href="/survey/" class="nav-cta nav-cta-drawer">Are We a Fit? →</a>
+ 
+        </div>
+ 
+        <!-- Hamburger -->
+        <div class="nav-hamburger" id="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+ 
+    </nav>
+</header>
 
     <!-- ===== HERO ===== -->
     <section class="about-hero">
