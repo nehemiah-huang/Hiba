@@ -548,7 +548,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Operations Responsibility Matrix',
             sigName: 'Founder & Director',
-            sigRole: 'buro. | Shared workspaces and offices',    
+            sigRole: `<span><br></span>buro. | Shared workspaces and offices`,    
             date: 'April 15, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. . I am genuinely impressed.`
@@ -571,7 +571,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Production Schedule',
             sigName: 'Founder & Director',
-            sigRole: 'buro. | Shared workspaces and offices',
+            sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `Almost perfect! Great job! This is the best anyone has done so far 👏.`
@@ -581,7 +581,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Operations Management',
             sigName: 'Founder & Director',
-            sigRole: 'buro. | Shared workspaces and offices',
+            sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'April 8, 2026',
             img: 'images/kwesi.jpg',
             message: `I have to praise someone this month: Hiba for 
@@ -593,7 +593,7 @@ const testimonials = {
             name: 'Patrick Gentilezza',
             tag: 'Founder & Director - buro',
             sigName: 'Founder & Director',
-            sigRole: 'buro. | Shared workspaces and offices',
+            sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
             message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far. 👏`
