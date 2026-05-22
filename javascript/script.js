@@ -601,7 +601,7 @@ const testimonials = {
         michael: {
             initials: 'PK',
             name: 'Patrick Gentilezza',
-            tag: 'AI Image Generator',
+            tag: 'People and operations management',
             sigName: `Founder & Director`,
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'May 21, 2026',
