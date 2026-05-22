@@ -582,7 +582,7 @@ const testimonials = {
             tag: 'Operations Management',
             sigName: 'Founder & Director',
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
-            date: 'April 8, 2026',
+            date: 'March 11, 2026',
             img: 'images/kwesi.jpg',
             message: `I have to praise someone this month: Hiba for 
                     taking those new responsibilities by the horns and leading the team so well. 
