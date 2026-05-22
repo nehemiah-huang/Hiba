@@ -924,7 +924,7 @@ p {
     margin-top: 1.5rem;
 }
 
-.rp-sig-name, .rp-sig-tag { font-family: 'Inter', sans-serif; font-size: 1 rem; font-weight: 500; color: var(--text-primary); }
+.rp-sig-name, .rp-sig-tag { font-family: 'Inter', sans-serif; font-size: 0.85 rem; font-weight: 500; color: var(--text-primary); }
 
 /* Mobile overlay (bottom sheet backdrop) */
 .mob-overlay {
