@@ -596,7 +596,7 @@ const testimonials = {
             sigRole: `<span><br></span>A life of design ( ALOD ) | Experiential Design Consultancy `,
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
-            message: `Made a couple of comments. almosASODFUHAWORUHAOWHO far. 👏`
+            message: `Im a fan of your work ma’am 👏🏾👏🏾`
         },
         michael: {
             initials: 'PK',
