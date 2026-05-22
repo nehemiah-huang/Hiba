@@ -594,9 +594,9 @@ const testimonials = {
             tag: 'AI Image generation',
             sigName: 'Founder & Creative Director',
             sigRole: `<span><br></span>A life of design ( ALOD ) | Experiential Design Consultancy `,
-            date: 'April 1, 2026',
+            date: 'April 28, 2026',
             img: 'images/nana.jpg',
-            message: `Im a fan of your work ma’am 👏🏾👏🏾`
+            message: `I'm a fan of your work ma’am 👏🏾👏🏾`
         },
         michael: {
             initials: 'PK',
