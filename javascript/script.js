@@ -606,7 +606,7 @@ const testimonials = {
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'May 21, 2026',
             img: 'images/michael.jpg',
-            message: `Team buro.! 🇬🇭 Hope you are all having a great week.<span><br></span>I am very happy to announce our newest Employee of the Month. For this round, the recognition goes to Hiba! 🏆 Your growth recently and the ownership you have taken over your tasks has been truly remarkable. The challenge ahead is to maintain and build on this standard, but we have no doubt you can do it. Mo ne yɔ, Hiba! 🎊`
+            message: `Team buro.! Hope you are all having a great week.<span><br></span>I am very happy to announce our newest Employee of the Month. For this round, the recognition goes to Hiba! 🏆 Your growth recently and the ownership you have taken over your tasks has been truly remarkable. The challenge ahead is to maintain and build on this standard, but we have no doubt you can do it. Mo ne yɔ, Hiba! 🎊`
         },
         daniel: {
             initials: 'DA',
