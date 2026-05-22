@@ -369,12 +369,12 @@ p {
 
 .intro-section {
     background: var(--bg-dark);
-    min-height: 50vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 8rem 3rem;
 }
 
 .intro-content {
@@ -908,7 +908,7 @@ p {
     margin: 0.75rem 0 0.25rem;
 }
 
-.rp-message, .rp-sig-name, .rp-sig-line {
+.rp-message {
     font-family: 'Inter', sans-serif;
     font-size: 0.92rem;
     font-weight: 300;
@@ -923,9 +923,8 @@ p {
     gap: 3px;
     margin-top: 1.5rem;
 }
-/* 
-.rp-sig-name { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
-.rp-sig-tag  {  font-size: 0.78rem; color: #6b6b6b; } */
+
+.rp-sig-name, .rp-sig-tag { font-family: 'Inter', sans-serif; font-size: 1 rem; font-weight: 500; color: var(--text-primary); }
 
 /* Mobile overlay (bottom sheet backdrop) */
 .mob-overlay {
@@ -1313,7 +1312,7 @@ footer {
     .process-section,
     .interactive-grid,
     .iow {
-        padding: 2rem 2rem;
+        padding: 5rem 2rem;
     }
 
     /* Process */
