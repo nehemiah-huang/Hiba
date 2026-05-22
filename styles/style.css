@@ -369,12 +369,12 @@ p {
 
 .intro-section {
     background: var(--bg-dark);
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 8rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .intro-content {
@@ -1313,7 +1313,7 @@ footer {
     .process-section,
     .interactive-grid,
     .iow {
-        padding: 5rem 2rem;
+        padding: 2rem 2rem;
     }
 
     /* Process */
