@@ -549,7 +549,7 @@ const testimonials = {
             tag: 'Operations Responsibility Matrix',
             sigName: 'Founder & Director',
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,    
-            date: 'April 15, 2026',
+            date: 'May 27, 2026',
             img: 'images/kwabena.jpg',
             message: `Keep your good performance and keep taking more ownership. I am genuinely impressed.`
         },
@@ -558,7 +558,7 @@ const testimonials = {
             name: 'Awurabena Asante',
             tag: 'Client Experience',
             sigRole: `<span style="font-weight: 500;">Customer</span><br>buro. | Shared workspaces and offices`,
-            date: 'April 12, 2026',
+            date: 'April 16, 2026',
             img: 'images/ama.jpg',
             message: `Good evening buro, just sending massive thanks for your support yesterday. 
                     I appreciate the assistance on such short notice, especially how things were moved around just to accommodate me. <br><br>
@@ -572,7 +572,7 @@ const testimonials = {
             tag: 'Production Schedule',
             sigName: 'Founder & Director',
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
-            date: 'April 8, 2026',
+            date: 'March 9, 2026',
             img: 'images/kwesi.jpg',
             message: `Almost perfect! Great job! This is the best anyone has done so far 👏.`
         },
@@ -604,7 +604,7 @@ const testimonials = {
             tag: 'People and operations management',
             sigName: `Founder & Director`,
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
-            date: 'May 21, 2026',
+            date: 'May 20, 2026',
             img: 'images/michael.jpg',
             message: `Team buro.! Hope you are all having a great week.<span><br></span>I am very happy to announce our newest Employee of the Month. For this round, the recognition goes to Hiba! 🏆 Your growth recently and the ownership you have taken over your tasks has been truly remarkable. The challenge ahead is to maintain and build on this standard, but we have no doubt you can do it. Mo ne yɔ, Hiba! 🎊`
         },
