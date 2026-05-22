@@ -369,7 +369,7 @@ p {
 
 .intro-section {
     background: var(--bg-dark);
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1494,9 +1494,10 @@ footer {
     .nav-container {
         padding: 1rem 1.5rem;
     }
-
+    .intro-section {
+        padding: 1rem 1.5rem;
+    }
     .parallax-section,
-    .intro-section,
     .process-section,
     .interactive-grid,
     .iow {
