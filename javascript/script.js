@@ -589,19 +589,19 @@ const testimonials = {
                     Continue to boss those extra responsibilities. The growth is real! `
         },
         nana: {
-            initials: 'PG',
-            name: 'Patrick Gentilezza',
-            tag: 'Founder & Director - buro',
-            sigName: 'Founder & Director',
-            sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
+            initials: 'AK',
+            name: 'Aku Klutse ',
+            tag: 'AI Image generation',
+            sigName: 'Founder & Creative Director',
+            sigRole: `<span><br></span>A life of design (ALOD) | Experiential Design Consultancy `,
             date: 'April 1, 2026',
             img: 'images/nana.jpg',
-            message: `Made a couple of comments. almost perfect! Great job! This is the best anyone has done so far. 👏`
+            message: `Made a couple of comments. almosASODFUHAWORUHAOWHO far. 👏`
         },
         michael: {
             initials: 'PK',
-            name: 'Patrick Aku Klutse',
-            tag: 'Ops delegation',
+            name: 'Patrick Gentilezza',
+            tag: 'AI Image Generator',
             sigName: `Founder & Director`,
             sigRole: `<span><br></span>buro. | Shared workspaces and offices`,
             date: 'May 21, 2026',
