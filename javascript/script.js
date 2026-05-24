@@ -539,6 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavLinks();
     initFooter();
     if (document.getElementById('sliderContainer')) new ReadingsSlider();
+    applyReadState();
     console.log('✅ Portfolio website initialized successfully!');
 });
 
@@ -593,7 +594,7 @@ const testimonials = {
             name: 'Aku Klutse ',
             tag: 'AI Image generation',
             sigName: 'Founder & Creative Director',
-            sigRole: `<span><br></span>A life of design ( ALOD ) | Experiential Design Consultancy `,
+            sigRole: `<span><br></span>A Life of Design ( ALOD ) | Experiential Design Consultancy `,
             date: 'April 28, 2026',
             img: 'images/nana.jpg',
             message: `I'm a fan of your work ma’am 👏🏾👏🏾`
