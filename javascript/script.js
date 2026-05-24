@@ -659,6 +659,9 @@ const testimonials = {
         if (isMobile) {
             document.getElementById('mob-overlay').classList.add('visible');
         }
+        
+        markAsRead(id);
+        applyReadState();
     }
 
     function closePane() {
@@ -697,9 +700,36 @@ const testimonials = {
         });
     }
 
+        // ── Read state management ──
+    function getReadIds() {
+        return JSON.parse(localStorage.getItem('readMessages') || '[]');
+    }
+
+    function markAsRead(id) {
+        const read = getReadIds();
+        if (!read.includes(id)) {
+            read.push(id);
+            localStorage.setItem('readMessages', JSON.stringify(read));
+        }
+    }
+
+    function applyReadState() {
+        const read = getReadIds();
+        document.querySelectorAll('.irow').forEach(row => {
+            const id = row.dataset.id;
+            if (read.includes(id)) {
+                const dot = row.querySelector('.dot');
+                if (dot) {
+                    dot.classList.add('hidden');
+                }
+            }
+        });
+    }
+
    window.addEventListener('resize', () => {
     const mobOverlay = document.getElementById('mob-overlay');
     if (mobOverlay && window.innerWidth > 680) {
         mobOverlay.classList.remove('visible');
     }
 });
+
