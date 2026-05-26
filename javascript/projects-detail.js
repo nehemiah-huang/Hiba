@@ -59,8 +59,8 @@
         tags: ['Operations & Systems', 'Launch Support', 'Strategic Oversight', 'Accounts & Reporting'],
         industry: ['Art & Culture', 'Creative', 'E-Commerce'],
         stats: [
-          { value: '51', label: 'Limited edition works structured and listed through\' the new digital infrastructure.' },
-          { value: '8', label: 'Artist collaborations actively managed and supported\' across the platform' },
+          { value: '51', label: 'Limited edition works structured and listed through\ the new digital infrastructure.' },
+          { value: '8', label: 'Artist collaborations actively managed and supported\ across the platform' },
           { value: '6', label: 'Exhibitions coordinated and delivered across multiple countries' }
         ],
         intro: 'Transforming a niche creative publisher into a digitally streamlined, culturally visible, and partnership-driven brand.',
@@ -90,7 +90,7 @@
           },
           {
             title: 'Agbumite Street Art Festival',
-            body: 'Coordinated the preparation and installation of Awo Tsegah’s artwork for the festival in Labadi, managing artist liaison, logistical setup and exhibition environment. A moment that expanded AYA Editions’ visibility within Ghana’s contemporary art scene.',
+            body: '',
             points: []
           }
         ],
@@ -193,7 +193,7 @@
             points: []
           },
           {
-            title: 'MIAB',
+            title: 'Memories In A Box',
             body: 'A Ghanaian-themed gift box concept celebrating local culture through curated products and experiences. Coordinated planning activities and helped structure the initiative as it developed.',
             points: []
           },
@@ -203,7 +203,7 @@
             points: []
           }
         ],
-        impact: 'Introducing financial visibility and clearer project structures changed how the studio could operate day to day. Costs, timelines, and collaborator responsibilities became easier to track, allowing projects to move forward with greater confidence and fewer last-minute adjustments. As these systems took hold, the studio became better equipped to handle multiple initiatives at once, with creative direction remaining firmly with the founder while the operational side gained the structure needed to support a broader range of experiential projects, product initiatives, and commercial activities.'
+        impact: 'Across 16 events, complex productions were delivered with reliability that the creative teams could count on. Vendors operated within clearer frameworks, installations progressed with fewer disruptions and budgets held. The Magna Carta outcome speaks most directly to what structured operational coordination makes possible. When the backend is tight, the experience in the room can be exactly what it was meant to be.'
       }
 
     };
