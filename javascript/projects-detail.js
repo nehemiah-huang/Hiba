@@ -88,25 +88,16 @@
             body: 'Exhibitions were coordinated end to end, from artist preparation and vendor management to logistics and financial reconciliation post event. The platform’s presence was extended into physical spaces across multiple countries, translating its creative vision into tangible experiences for collectors and audiences.',
             points: []
           },
-          {
-            title: 'Agbumite Street Art Festival',
-            body: '',
-            points: []
-          }
+          
         ],
         highlights: [
           {
             title: 'Agbumite Street Art Festival',
-            body: '',
-            points: [
-              'Coordinated the preparation and installation of Awo Tsegah\'s artwork for the festival in Labadi',
-              'Liaised with authorities to ensure smooth participation',
-              'Supported logistical preparation and setup for the exhibition environment',
-              'Contributed to expanding the visibility of AYA Editions\' artists within Ghana\'s contemporary art scene'
-            ]
+            body: `Coordinated the preparation and installation of Awo Tsegah's artwork for the festival in Labadi. Liaised with authorities to ensure smooth participation. Supported logistical preparation and setup for the exhibition environment. Contributed to expanding the visibility of AYA Editions artists within Ghana's contemporary art scene`,
+            points: []
           }
         ],
-        impact: 'These efforts introduced the operational stability needed for artists, collaborators, and partners to engage with the platform confidently. Exhibitions and partnerships ran with greater coordination and reliability, while clearer financial processes improved transparency and accountability across the business. This structure allowed the founders to focus more fully on creative direction, knowing the operational side of the platform could run smoothly and support its growing network of artists, collectors, and cultural collaborators.'
+        impact: 'With the operational side of the platform running smoothly, the founder could focus on what she did best. Exhibitions and partnerships ran with structure and reliability. Financial processes became transparent and consistent, building trust with artists and collaborators. And the Shopify infrastructure gave the platform a commercial foundation it could actually grow from, turning a vision driven startup into a brand with the systems to sustain it.'
       },
 
       2: {
@@ -141,12 +132,16 @@
         ],
         highlights: [
           {
-            title: 'The Magna Carta Experience',
-            body: '',
-            points: []
+            title: 'The Magna Carta Experience with Veuve Clicquot',
+            body: `The Magna Carta is one of Africa’s most anticipated luxury brand activations. Coordinating its production meant managing a compressed timeline, a complex vendor network and a 600 guest experience where every detail carried the weight of the brand behind it.`,
+            points: ['Production schedules and vendor activities coordinated across the full event build', 
+              'Vendor logistics and installation planning managed under a compressed timeline', 'A structured cash handling framework developed to protect revenue integrity',
+              'Operational alignment maintained across vendors, venue teams and production partners throughout'
+            ],
+            body2: 'The result: a 200% increase in Veuve Clicquot sales with more than 300 bottles sold during the event. Brand partners described it as a benchmark activation for Veuve Clicquot in Africa.'
           }
         ],
-        impact: 'Through structured planning and disciplined coordination, complex event productions were delivered with greater reliability despite demanding timelines. Vendors, contractors, and internal teams operated within clearer production frameworks, allowing installations and logistics to progress with fewer disruptions. The Magna Carta 2024 edition generated a 200% increase in Veuve Clicquot sales, with more than 300 bottles sold during the event. Brand partners described the experience as a benchmark activation for Veuve Clicquot in Africa.'
+        impact: 'Across 16 events, complex productions were delivered with reliability that the creative teams could count on. Vendors operated within clearer frameworks, installations progressed with fewer disruptions and budgets held. The Magna Carta outcome speaks most directly to what structured operational coordination makes possible. When the backend is tight, the experience in the room can be exactly what it was meant to be. '
       },
 
       3: {
@@ -246,13 +241,14 @@
       `).join('');
 
       // Build highlights HTML
-      const highlightsHTML = p.highlights.map(h => `
-        <div class="detail-highlight">
-          <div class="detail-highlight-title">${h.title}</div>
-          <p class="detail-highlight-body">${h.body}</p>
-          ${h.points.length ? `<ul class="detail-list">${h.points.map(pt => `<li>${pt}</li>`).join('')}</ul>` : ''}
-        </div>
-      `).join('');
+const highlightsHTML = p.highlights.map(h => `
+    <div class="detail-highlight">
+        <div class="detail-highlight-title">${h.title}</div>
+        <p class="detail-highlight-body">${h.body}</p>
+        ${h.points.length ? `<ul class="detail-list">${h.points.map(pt => `<li>${pt}</li>`).join('')}</ul>` : ''}
+        ${h.body2 ? `<p class="detail-highlight-body" style="margin-top: 1rem;">${h.body2}</p>` : ''}
+    </div>
+`).join('');
 
       // Build responsibilities HTML
       const respHTML = p.responsibilities && p.responsibilities.length
