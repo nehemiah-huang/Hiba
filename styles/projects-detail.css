@@ -1,7 +1,4 @@
 /* ===== DETAIL VIEW ===== */
-:root {
-  text-align: justify;
-}
 /* ── Back button ── */
 .detail-back {
   display: inline-flex;
