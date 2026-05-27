@@ -49,7 +49,7 @@
             points: []
           }
         ],
-        impact: 'With the operational side of the platform running smoothly, the founder could focus on what she did best. Exhibitions and partnerships ran with structure and reliability. Financial processes became transparent and consistent, building trust with artists and collaborators. And the Shopify infrastructure gave the platform a commercial foundation it could actually grow from, turning a vision driven startup into a brand with the systems to sustain it.'
+        impact: 'IWMIS moved from a system people worked around to one they relied on. Adoption strengthened across all 16 regions as structured onboarding and training reduced resistance and built genuine confidence in the platform. Financial settlements between municipalities and Zoomlion became faster and cleaner, with fewer disputes and a clearer paper trail. Data that had previously been inconsistent became a reliable foundation for operational and strategic decisions. What started as a coordination and adoption challenge became a platform positioned to sustain the demands of Ghana’s largest waste management operation.'
       },
 
       1: {
